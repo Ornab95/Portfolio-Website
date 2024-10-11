@@ -9,21 +9,23 @@
 </head>
 
 <body class="bg-gray-100">
-    <!-- Navigation Bar -->
-    <nav class="bg-gray-800 text-white p-4 shadow-md">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-lg font-bold">
                 <a href="index.html" class="hover:text-blue-200">Ornab Biswass</a>
             </div>
+            <!-- Mobile Menu Button -->
             <div class="flex md:hidden">
-                <button id="menu-button" class="text-white focus:outline-none">
+                <button id="menu-toggle" class="text-white focus:outline-none">
                     <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
-                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32-14.3 32 32z" />
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
                 </button>
             </div>
-            <ul id="nav-links" class="nav-menu md:flex md:space-x-6 md:items-center hidden md:block">
+            <!-- Navbar Links -->
+            <ul id="nav-links" class="hidden md:flex md:space-x-6 md:items-center">
                 <li><a href="#features" class="hover:text-blue-300 transition-colors">Features</a></li>
                 <li><a href="#technologies-Used" class="hover:text-blue-300 transition-colors">Technologies Used</a>
                 </li>
@@ -34,29 +36,16 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu Button -->
-    <div class="md:hidden">
-        <button id="menu-toggle" class="p-2 focus:outline-none" aria-label="Toggle menu">
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-        </button>
-    </div>
-
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden md:hidden bg-gray-800 rounded-2xl p-4 absolute top-15 left-0 w-full shadow-lg text-center">
-        <a href="aboutseu.html" class="block text-gray-300 hover:text-blue-500 transition duration-300 py-2"
-            aria-label="About SEU">About SEU</a>
-        <a href="dashboard.html" class="block text-gray-300 hover:text-white transition duration-300 py-2"
-            aria-label="Dashboard">Dashboard</a>
-        <a href="HowtoApply.html" class="block text-gray-300 hover:text-white transition duration-300 py-2"
-            aria-label="How to Apply">How to Apply</a>
-        <a href="https://ums.seu.edu.bd/" class="block text-gray-300 hover:text-white transition duration-300 py-2"
-            aria-label="Sign In">Sign In</a>
-        <a href="signup.html" class="block text-gray-300 hover:text-white transition duration-300 py-2"
-            aria-label="Sign Up">Sign Up</a>
+        class="hidden bg-gray-800 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
+        <div class="flex flex-col space-y-4">
+            <a href="#features" class="hover:text-blue-300 transition-colors">Features</a>
+            <a href="#technologies-Used" class="hover:text-blue-300 transition-colors">Technologies Used</a>
+            <a href="#screenshots" class="hover:text-blue-300 transition-colors">Screenshots</a>
+            <a href="#about" class="hover:text-blue-300 transition-colors">About Me</a>
+            <a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a>
+        </div>
     </div>
 
     <!-- Page Content -->
@@ -66,140 +55,162 @@
             The SEU Admission System streamlines the student application process, allowing students to easily apply for
             admissions at Southeast University.
         </p>
-
-        <h2 class="text-3xl font-semibold mb-4">Features</h2>
-        <div id="features" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Intuitive User Interface</h3>
-                <p class="text-gray-700 mt-2">An easy-to-use interface designed for prospective students.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Application Forms</h3>
-                <p class="text-gray-700 mt-2">Comprehensive forms that collect all necessary information from students.
-                </p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Educational Information</h3>
-                <p class="text-gray-700 mt-2">Students can input detailed educational background and results.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Address Information</h3>
-                <p class="text-gray-700 mt-2">Users can fill in their present and permanent address details.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Confirmation Page</h3>
-                <p class="text-gray-700 mt-2">Review and confirm submitted applications before finalizing.</p>
-            </div>
-        </div>
-
-        <h2 class="text-3xl font-semibold mb-4">Technologies Used</h2>
-        <div id="technologies-Used" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Angular</h3>
-                <p class="text-gray-700 mt-2">Front-end framework for building the system’s user interface.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Tailwind CSS</h3>
-                <p class="text-gray-700 mt-2">Utility-first CSS framework for responsive and modern designs.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">Java</h3>
-                <p class="text-gray-700 mt-2">Used for building back-end services and logic handling.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h3 class="text-lg font-semibold">HTML</h3>
-                <p class="text-gray-700 mt-2">Used for structuring the content and forms of the system.</p>
+        <div id="features">
+            <h2 class="text-3xl font-semibold mb-4">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Intuitive User Interface</h3>
+                    <p class="text-gray-700 mt-2">An easy-to-use interface designed for prospective students.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Application Forms</h3>
+                    <p class="text-gray-700 mt-2">Comprehensive forms that collect all necessary information from
+                        students.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Educational Information</h3>
+                    <p class="text-gray-700 mt-2">Students can input detailed educational background and results.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Address Information</h3>
+                    <p class="text-gray-700 mt-2">Users can fill in their present and permanent address details.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Confirmation Page</h3>
+                    <p class="text-gray-700 mt-2">Review and confirm submitted applications before finalizing.</p>
+                </div>
             </div>
         </div>
 
-        <h2 class="text-3xl font-semibold mb-4">Screenshots</h2>
-        <div id="screenshots" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            <!-- Home Page Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-HomePage.png" alt="Home Page" class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Home Page</h3>
+        <div id="technologies-Used">
+            <h2 class="text-3xl font-semibold mb-4">Technologies Used</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Angular</h3>
+                    <p class="text-gray-700 mt-2">Front-end framework for building the system’s user interface.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Tailwind CSS</h3>
+                    <p class="text-gray-700 mt-2">Utility-first CSS framework for responsive and modern designs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Java</h3>
+                    <p class="text-gray-700 mt-2">Used for building back-end services and logic handling.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">HTML</h3>
+                    <p class="text-gray-700 mt-2">Used for structuring the content and forms of the system.</p>
+                </div>
             </div>
-            <!-- Education Info Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-EducationInfo.png" alt="Education Info"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Education Info</h3>
-            </div>
-            <!-- Education Result Info Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-Education-Result-Info.png" alt="Education Result Info"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Education Result Info</h3>
-            </div>
-            <!-- Education Result Info Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-Education-Result-Info.png" alt="Education Result Info"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Education Result Info</h3>
-            </div>
+        </div>
+        <div id="screenshots">
+            <h2 class="text-3xl font-semibold mb-4">Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <!-- Home Page Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-HomePage.png" alt="Home Page"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Home Page</h3>
+                </div>
+                <!-- Education Info Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-EducationInfo.png" alt="Education Info"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Education Info</h3>
+                </div>
+                <!-- Education Result Info Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-Education-Result-Info.png" alt="Education Result Info"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Education Result Info</h3>
+                </div>
+                <!-- Education Result Info Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-Education-Result-Info.png" alt="Education Result Info"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Education Result Info</h3>
+                </div>
 
-            <!-- Education Result Info Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-Education-Result-Info.png" alt="Education Result Info"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Education Result Info</h3>
-            </div>
-            <!-- Confirmation Page Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-Confermation.png" alt="Confirmation Page"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Confirmation Page</h3>
-            </div>
+                <!-- Education Result Info Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-Education-Result-Info.png" alt="Education Result Info"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Education Result Info</h3>
+                </div>
+                <!-- Confirmation Page Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-Confermation.png" alt="Confirmation Page"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Confirmation Page</h3>
+                </div>
 
-            <!-- Form For Diploma Student Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-Form-For-Diploma-Student.png" alt="Form for Diploma Student"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Form for Diploma Student</h3>
+                <!-- Form For Diploma Student Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-Form-For-Diploma-Student.png" alt="Form for Diploma Student"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Form for Diploma Student</h3>
+                </div>
+                <!-- Student Address Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-Student-Address.png" alt="Student Address Form"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Student Address Form</h3>
+                </div>
+                <!-- Basic Info of Student Screenshot -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="OA-Photo/OA-BasicInfoOfStudent.png" alt="Basic Info Form"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Basic Info Form</h3>
+                </div>
             </div>
-            <!-- Student Address Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-Student-Address.png" alt="Student Address Form"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Student Address Form</h3>
-            </div>
-            <!-- Basic Info of Student Screenshot -->
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="OA-Photo/OA-BasicInfoOfStudent.png" alt="Basic Info Form"
-                    class="w-full h-auto object-cover rounded-lg mb-4">
-                <h3 class="text-lg font-semibold">Basic Info Form</h3>
-            </div>
-
-
         </div>
 
-    </div>
-    <!-- About Me Section -->
-    <section id="about" class="my-20">
-        <div class="text-center">
-            <h2 class="text-3xl font-bold mb-6">About Me</h2>
-            <p>I'm a passionate software engineer with a keen interest in web development and a solid foundation in Java
-                and Angular. I enjoy creating impactful applications that solve real-world problems.</p>
-        </div>
-    </section>
+        <!-- About Me Section -->
+        <section id="about" class="py-8 bg-gray-100">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-4xl font-bold mb-10 text-center">About Me</h2>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 mx-auto">
+                    <img src="Photo/OrnabBiswas3.JPG" alt="Ornab Casual"
+                        class="rounded-lg object-cover w-48 h-54 mb-4 mx-auto">
+                    <p class="text-gray-700 text-lg mb-4">Beyond coding and research, I enjoy casual moments and staying
+                        curious
+                        about various aspects of life. Here’s a glimpse of my more relaxed side!</p>
+                    <h3 class="text-2xl font-semibold mb-4">My Hobbies & Interests</h3>
+                    <ul class="list-disc list-inside text-gray-700 text-lg">
+                        <li>Exploring new technologies and programming languages</li>
+                        <li>Reading books on personal development and technology</li>
+                        <li>Engaging in outdoor activities and sports</li>
+                        <li>Cooking and experimenting with new recipes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="my-20">
-        <div class="text-center">
-            <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-            <p>Email: <a href="mailto:ornabbiswass@example.com"
-                    class="text-blue-500 hover:underline">ornabbiswass@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ornab-biswass/" target="_blank"
-                    class="text-blue-500 hover:underline">LinkedIn Profile</a></p>
-        </div>
-    </section>
-    <script>
-        // Toggle mobile menu
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+        <!-- Contact Section -->
+        <section id="contact" class="p-8 bg-white rounden  hover:shadow-xl transition-shadow duration-300">
+            <div class="container mx-auto px-4 md:px-8 text-center bg-white">
+                <h2 class="text-4xl font-bold mb-10">Contact</h2>
+                <p class="text-lg mb-4">Feel free to reach out for collaboration or job opportunities!</p>
+                <div class=" p-6 rounded-lg  mx-auto">
+                    <p class="mb-2">Email: <a href="mailto:ornabbiswass@gmail.com"
+                            class="text-blue-500">ornabbiswass@gmail.com</a></p>
+                    <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/ornab-biswass"
+                            class="text-blue-500">linkedin.com/in/ornab-biswass</a></p>
+                    <p class="mb-2">GitHub: <a href="https://github.com/Ornab95"
+                            class="text-blue-500">github.com/Ornab95</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Toggle mobile menu
+            document.getElementById('menu-toggle').addEventListener('click', function () {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
 </body>
 
 </html>
