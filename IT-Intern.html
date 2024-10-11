@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Intern - Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">
+                <a href="index.html" class="hover:text-blue-200">Ornab Biswass</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="nav-links" class="hidden md:flex md:space-x-6 md:items-center">
+                <li><a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a></li>
+                <li><a href="#Key-Responsibilities" class="hover:text-blue-300 transition-colors">Key
+                        Responsibilities</a></li>
+                <li><a href="#Overview" class="hover:text-blue-300 transition-colors">Overview</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden bg-gray-800 text-white rounded-lg p-4 absolute item-center top-16 left-0 w-full z-10 shadow-md md:hidden">
+        <a href="#projects" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="#Key-Responsibilities" class="block py-2 hover:text-blue-500">Key Responsibilities</a>
+        <a href="#Overview" class="block py-2 hover:text-blue-500">Overview</a>
+        <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container mx-auto px-4 md:px-8 py-16">
+
+        <h1 class="text-4xl font-bold mb-6 text-center">IT Intern Experience</h1>
+        <div id="Overview" class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-3xl font-semibold mb-4">Overview</h2>
+            <p class="text-gray-700 mb-4">
+                As an IT Intern at Southeast University, I have had the opportunity to work on various projects that
+                enhance my technical skills and contribute to the organization's goals. My primary focus has been on the
+                development of the Talent Acquisition System and the front-end of the Admission System, alongside
+                managing inventory and assisting with various tasks assigned by senior colleagues.
+            </p>
+        </div>
+        <div id="Key-Responsibilities" class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-3xl font-semibold mb-4">Key Responsibilities</h2>
+            <ul class="list-disc list-inside mb-6">
+                <li>Developing the Talent Acquisition System using Angular and Tailwind CSS.</li>
+                <li>Contributing to the front-end development of the Southeast University Admission System.</li>
+                <li>Managing inventory and assisting with various tasks assigned by my senior colleagues.</li>
+                <li>Participating in team meetings to discuss project progress and challenges.</li>
+            </ul>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+
+        <div id="projects" class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+            <!-- Project 1: Talent Acquisition System -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-bold mb-2">Talent Acquisition System</h3>
+                <p class="text-gray-700 mb-4">A comprehensive recruitment platform designed to streamline the hiring
+                    process for Southeast University. I contributed to its development by creating an intuitive user
+                    interface and implementing features that enhance user experience.</p>
+                <div class="text-center">
+                    <a href="talent-acquisition-system.html"
+                        class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Admission System Frontend -->
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h3 class="text-xl font-bold mb-2">Admission System Frontend</h3>
+                <p class="text-gray-700 mb-4">Developing the front-end for the Southeast University admission system,
+                    focusing on user experience and interface design. My work involved ensuring that the application is
+                    responsive and accessible across various devices.</p>
+                <div class="text-center">
+                    <a href="SEUAdmissionSystem.html"
+                        class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-300">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div id="contact" class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold">Let's Collaborate!</h3>
+            <p class="mt-4">Feel free to reach out for collaboration or job opportunities!</p>
+            <div class="mt-6">
+                <a href="mailto:ornabbiswass@gmail.com"
+                    class="bg-sky-500 px-6 py-2 rounded-full hover:bg-sky-600 transition">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

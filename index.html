@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornab Biswass | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">
+                <a href="index.html" class="hover:text-blue-200">Ornab Biswass</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="nav-links" class="hidden md:flex md:space-x-6 md:items-center">
+                <li><a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a></li>
+                <li><a href="#achievements" class="hover:text-blue-300 transition-colors">Achievements</a></li>
+                <li><a href="#experience" class="hover:text-blue-300 transition-colors">Experience</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition-colors">About Me</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden bg-gray-800 text-white rounded-lg p-4 absolute item-center top-16 left-0 w-full z-10 shadow-md md:hidden">
+        <a href="#projects" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="#achievements" class="block py-2 hover:text-blue-500">Achievements</a>
+        <a href="#experience" class="block py-2 hover:text-blue-500">Experience</a>
+        <a href="#about" class="block py-2 hover:text-blue-500">About Me</a>
+        <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white h-screen flex items-center justify-center">
+        <div class="text-center">
+            <img src="Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
+                class="rounded-full mx-auto w-64 h-64 object-cover mb-6 border-4 border-blue-500">
+            <h1 class="text-5xl font-bold mb-4">Ornab Biswass</h1>
+            <p class="text-xl mb-6">Junior Software Engineer | Java & Spring-Boot</p>
+            <a href="#projects" class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">View
+                My Projects</a>
+            <a href="OrnabBiswass.pdf" target="_blank"
+                class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition ml-4">View My
+                Resume</a>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <!-- Section Title -->
+            <h2 class="text-4xl font-bold bg-white w-full rounded-lg p-6 mb-12 text-gray-800">Work Experience</h2>
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- IT Intern Experience -->
+                <div>
+                    <a href="IT-Intern.html">
+                        <div
+                            class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+                            <h3 class="text-2xl font-semibold text-gray-800">IT Intern</h3>
+                            <h4 class="text-lg text-gray-600 mt-2">Southeast University, Department of IT | 06/2024 -
+                                Present</h4>
+                            <ul class="list-disc list-inside mt-4 text-left text-gray-700">
+                                <li>Developing the Talent Acquisition System using Angular, Tailwind CSS, HTML, and
+                                    Java.
+                                </li>
+                                <li>Leading the SEU Admission Page front-end development using Tailwind CSS and
+                                    JavaScript.
+                                </li>
+                                <li>Collaborating with the IT team on full-stack development tasks.</li>
+                                <li>Utilizing Git/GitHub for version control.</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Campus Ambassador Experience -->
+                <div>
+                    <a href="Volunteer-work.html">
+                        <div
+                            class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+                            <h3 class="text-2xl font-semibold text-gray-800">Campus Ambassador (Volunteer Work)</h3>
+                            <h4 class="text-lg text-gray-600 mt-2">Kormo Jobs by Google | 05/2020 - 06/2022, Dhaka</h4>
+                            <ul class="list-disc list-inside mt-4 text-left text-gray-700">
+                                <li>Promoted Kormo Jobs on campus and connected students with job opportunities.</li>
+                                <li>Organized campus events and educated students on job search.</li>
+                            </ul>
+                            <h4 class="text-lg text-gray-600 mt-4">Shomvob Technologies Ltd. | 01/2023 - 04/2023</h4>
+                            <ul class="list-disc list-inside mt-4 text-left text-gray-700">
+                                <li>Promoted Shomvob Android app on campus to help students access entry-level jobs.
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <!-- Section Title -->
+            <h2 class="text-4xl font-bold bg-white w-full rounded-lg p-6 shadow-md mb-12 text-gray-800">Projects</h2>
+
+            <!-- Project Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                <!-- Project 1: Talent Acquisition System -->
+                <div>
+                    <a href="talent-acquisition-system.html"
+                        class="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 block">
+                        <img src="Photo/TAS.jpg" alt="Talent Acquisition System"
+                            class="w-full h-auto object-cover rounded-t-lg mb-4" style="height: 300px;">
+                        <h3 class="text-2xl font-semibold text-gray-800">Talent Acquisition System</h3>
+                        <p class="text-gray-600 mt-2">A recruitment platform developed using Angular, Tailwind CSS, and
+                            Spring Boot.
+                        </p>
+                        <!-- <span class="text-blue-500 hover:underline mt-4 inline-block">View on GitHub</span> -->
+                    </a>
+                </div>
+
+                <!-- Project 2: SEU Admission System -->
+                <div>
+                    <a href="SEUAdmissionSystem.html"
+                        class="bg-blue-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 block">
+                        <img src="Photo/Admission.png" alt="SEU Admission System"
+                            class="w-full h-auto object-cover rounded-t-lg mb-4" style="height: 300px;">
+                        <h3 class="text-2xl font-semibold text-gray-800">SEU Admission System</h3>
+                        <p class="text-gray-600 mt-2">Developed the front-end for Southeast University's admission
+                            system.</p>
+                        <!-- <span class="text-blue-500 hover:underline mt-4 inline-block">View on GitHub</span> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-bold mb-10 text-center">Achievements</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Research Defence Achievement -->
+                <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800">Research Defence</h3>
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full md:w-1/2 p-4">
+                            <p class="text-gray-700 mt-2">Successfully defended my research project on breast cancer
+                                classification using a Machine Learning Algorithm.</p>
+                            <p class="text-gray-500 text-sm mt-2">Date: 02-10-2024</p>
+                        </div>
+                        <div class="w-full md:w-1/2 p-4">
+                            <img src="Photo/OrnabBiswas1.jpg" alt="Research Defence Day"
+                                class="rounded-lg object-cover w-48 h-48 mx-auto shadow-md transition-transform transform hover:scale-105">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Java Achievement -->
+                <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800">Core Java</h3>
+                    <p class="text-gray-700 mt-2">Demonstrated proficiency in core Java programming concepts.</p>
+                    <p class="text-gray-500 text-sm mt-2">Duration: 02/2021 - 08/2021</p>
+                </div>
+
+                <!-- Employability Skills Program Achievement -->
+                <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800">21st Century Core Employability Skills Program</h3>
+                    <p class="text-gray-700 mt-2">Strengthened communication, teamwork, problem-solving, and critical
+                        thinking skills.</p>
+                    <p class="text-gray-500 text-sm mt-2">Duration: 05/2021 - 08/2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-4xl font-bold mb-10 text-center">About Me</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 mx-auto">
+                <img src="Photo/OrnabBiswas3.JPG" alt="Ornab Casual"
+                    class="rounded-lg object-cover w-48 h-48 mb-4 mx-auto">
+                <p class="text-gray-700 text-lg mb-4">Beyond coding and research, I enjoy casual moments and staying
+                    curious
+                    about various aspects of life. Here’s a glimpse of my more relaxed side!</p>
+                <h3 class="text-2xl font-semibold mb-4">My Hobbies & Interests</h3>
+                <ul class="list-disc list-inside text-gray-700 text-lg">
+                    <li>Exploring new technologies and programming languages</li>
+                    <li>Reading books on personal development and technology</li>
+                    <li>Engaging in outdoor activities and sports</li>
+                    <li>Cooking and experimenting with new recipes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-10">Contact</h2>
+            <p class="text-lg mb-4">Feel free to reach out for collaboration or job opportunities!</p>
+            <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mx-auto">
+                <p class="mb-2">Email: <a href="mailto:ornabbiswass@gmail.com"
+                        class="text-blue-500">ornabbiswass@gmail.com</a></p>
+                <p class="mb-2">LinkedIn: <a href="https://linkedin.com/in/ornab-biswass"
+                        class="text-blue-500">linkedin.com/in/ornab-biswass</a></p>
+                <p class="mb-2">GitHub: <a href="https://github.com/Ornab95"
+                        class="text-blue-500">github.com/Ornab95</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold">Let's Collaborate!</h3>
+            <p class="mt-4">Feel free to reach out for collaboration or job opportunities!</p>
+            <div class="mt-6">
+                <a href="mailto:ornabbiswass@gmail.com"
+                    class="bg-sky-500 px-6 py-2 rounded-full hover:bg-sky-600 transition">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

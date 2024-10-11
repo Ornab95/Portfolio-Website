@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Acquisition System - Project Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">
+                <a href="index.html" class="hover:text-blue-200">Ornab Biswass</a>
+            </div>
+            <div class="flex md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="nav-links" class="nav-menu md:flex md:space-x-6 md:items-center hidden md:block">
+                <li><a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a></li>
+                <li><a href="#achievements" class="hover:text-blue-300 transition-colors">Achievements</a></li>
+                <li><a href="#experience" class="hover:text-blue-300 transition-colors">Experience</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition-colors">About Me</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+        <button id="menu-toggle" class="p-2 focus:outline-none" aria-label="Toggle menu">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden bg-gray-800 rounded-2xl p-4 absolute top-15 left-0 w-full shadow-lg text-center">
+        <a href="aboutseu.html" class="block text-gray-300 hover:text-blue-500 transition duration-300 py-2"
+            aria-label="About SEU">About SEU</a>
+        <a href="dashboard.html" class="block text-gray-300 hover:text-white transition duration-300 py-2"
+            aria-label="Dashboard">Dashboard</a>
+        <a href="HowtoApply.html" class="block text-gray-300 hover:text-white transition duration-300 py-2"
+            aria-label="How to Apply">How to Apply</a>
+        <a href="https://ums.seu.edu.bd/" class="block text-gray-300 hover:text-white transition duration-300 py-2"
+            aria-label="Sign In">Sign In</a>
+        <a href="signup.html" class="block text-gray-300 hover:text-white transition duration-300 py-2"
+            aria-label="Sign Up">Sign Up</a>
+    </div>
+
+
+    <!-- Page Content -->
+    <div class="container mx-auto px-4 md:px-8 py-16">
+        <h1 class="text-4xl font-bold mb-6 text-center">Talent Acquisition System (TAS)</h1>
+        <p class="text-gray-700 text-lg mb-8 text-center">
+            The Talent Acquisition System is a comprehensive recruitment platform developed to streamline the hiring
+            process
+            for Southeast University.
+        </p>
+
+        <h2 class="text-3xl font-semibold mb-4">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">User-Friendly Interface</h3>
+                <p class="text-gray-700 mt-2">Designed for both job applicants and HR professionals.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Secure Login</h3>
+                <p class="text-gray-700 mt-2">Implementing secure user registration and login functionality.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Applicant Dashboard</h3>
+                <p class="text-gray-700 mt-2">Manage applications and view application statuses easily.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Job Posting</h3>
+                <p class="text-gray-700 mt-2">HR managers can post job openings seamlessly.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Guidance on How to Apply</h3>
+                <p class="text-gray-700 mt-2">Step-by-step guidance for applicants on the application process.</p>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-4">Technologies Used</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Angular</h3>
+                <p class="text-gray-700 mt-2">Framework for building the front-end of the application.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Spring Boot</h3>
+                <p class="text-gray-700 mt-2">Framework used for building the back-end services.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Tailwind CSS</h3>
+                <p class="text-gray-700 mt-2">Utility-first CSS framework for styling the application.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">HTML</h3>
+                <p class="text-gray-700 mt-2">Markup language used for structuring web content.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">Java</h3>
+                <p class="text-gray-700 mt-2">Programming language used in back-end development.</p>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-4">Screenshots</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Dashboard Screenshot -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="TAS-Photo/TAS-Dashboard.png" alt="TAS Dashboard"
+                    class="w-full h-auto object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Dashboard</h3>
+            </div>
+            <!-- Forget Password Screenshot -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="TAS-Photo/TAS-ForgetPass.png" alt="TAS Forget Password"
+                    class="w-full h-auto object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Forget Password</h3>
+            </div>
+            <!-- How to Apply Screenshot -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="TAS-Photo/TAS-HowToApply.png" alt="TAS How to Apply"
+                    class="w-full h-auto object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">How to Apply</h3>
+            </div>
+            <!-- HR Job Post Screenshot -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="TAS-Photo/TAS-HrJobPost.png" alt="TAS HR Job Post"
+                    class="w-full h-auto object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">HR Job Post</h3>
+            </div>
+            <!-- Registration Screenshot -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="TAS-Photo/TAS-Reg.png" alt="TAS Registration"
+                    class="w-full h-auto object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Registration</h3>
+            </div>
+            <!-- Sign In Screenshot -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="TAS-Photo/TAS-SignIn.png" alt="TAS Sign In"
+                    class="w-full h-auto object-cover rounded-lg mb-4">
+                <h3 class="text-lg font-semibold">Sign In</h3>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://github.com/Ornab95/talent-acquisition-system"
+                class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold">Let's Collaborate!</h3>
+            <p class="mt-4">Feel free to reach out for collaboration or job opportunities!</p>
+            <div class="mt-6">
+                <a href="mailto:ornabbiswass@gmail.com"
+                    class="bg-sky-500 px-6 py-2 rounded-full hover:bg-sky-600 transition">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
