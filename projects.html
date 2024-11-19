@@ -9,6 +9,7 @@
 </head>
 
 <body class="bg-gray-100 text-gray-900">
+
     <!-- Navbar -->
     <nav class="bg-gray-800 p-4">
         <div class="container mx-auto flex justify-between items-center">
@@ -22,30 +23,55 @@
     </nav>
 
     <!-- Projects Section -->
-    <section class="container mx-auto my-16 p-6 bg-white shadow-md rounded">
-        <h2 class="text-3xl font-bold mb-8">Projects</h2>
-        <div class="space-y-8">
-            <!-- Project 1 -->
-            <div>
-                <h3 class="text-2xl font-bold">Talent Acquisition System</h3>
-                <p>Developed a recruitment platform using Angular, Tailwind CSS, and Spring Boot, with dynamic
-                    interfaces, REST APIs, and MongoDB backend.</p>
-            </div>
-            <!-- Project 2 -->
-            <div>
-                <h3 class="text-2xl font-bold">SEU Admission System Front-End</h3>
-                <p>Designed and developed the front-end for Southeast University’s admission system using Tailwind CSS
-                    and JavaScript.</p>
-            </div>
-            <!-- Project 3 -->
-            <div>
-                <h3 class="text-2xl font-bold">Basic Calculator</h3>
-                <p>Created a desktop calculator using JavaFX and MVC design principles.</p>
-            </div>
-            <!-- Project 4 -->
-            <div>
-                <h3 class="text-2xl font-bold">My Personal Bank</h3>
-                <p>Developed a personal finance management app using Java, JavaFX, and MySQL for data storage.</p>
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- Project 1 -->
+                <a href="talent-acquisition-system.html"
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col p-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Talent Acquisition System</h3>
+                        <p class="text-gray-700 mt-2">Developed a recruitment platform using Angular, Tailwind CSS, and
+                            Spring Boot, with dynamic interfaces, REST APIs, and MongoDB backend.</p>
+                    </div>
+                    <span class="mt-4 text-blue-500 font-medium hover:underline">Learn More</span>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="SEUAdmissionSystem.html"
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col p-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">SEU Admission System Front-End</h3>
+                        <p class="text-gray-700 mt-2">Designed and developed the front-end for Southeast University’s
+                            admission system using Tailwind CSS and JavaScript.</p>
+                    </div>
+                    <span class="mt-4 text-blue-500 font-medium hover:underline">Learn More</span>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="basic-calculator.html"
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col p-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Basic Calculator</h3>
+                        <p class="text-gray-700 mt-2">Created a desktop calculator using JavaFX and MVC design
+                            principles.</p>
+                    </div>
+                    <span class="mt-4 text-blue-500 font-medium hover:underline">Learn More</span>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="personal-bank.html"
+                    class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col p-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">My Personal Bank</h3>
+                        <p class="text-gray-700 mt-2">Developed a personal finance management app using Java, JavaFX,
+                            and MySQL for data storage.</p>
+                    </div>
+                    <span class="mt-4 text-blue-500 font-medium hover:underline">Learn More</span>
+                </a>
+
             </div>
         </div>
     </section>
