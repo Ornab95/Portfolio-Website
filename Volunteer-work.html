@@ -38,17 +38,51 @@
 
         nav {
             -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
             /* For Safari compatibility */
             background-color: rgba(255, 255, 255, 0.5);
             /* More transparent background */
+        }
+
+        /* Mobile Menu */
+        #mobile-menu {
+            position: absolute;
+            top: 0;
+            /* Aligns the menu right below the navbar */
+            right: 0;
+            width: 100%;
+            /* Adjust to your preferred width, or set to 50% for half-screen */
+            height: 100vh;
+            /* Full viewport height */
+            background-color: rgba(58, 58, 58, 0.6);
+            /* Semi-transparent background */
+            backdrop-filter: blur(10px);
+            /* Blurry background effect */
+            transform: translateX(100%);
+            /* Starts off the screen to the right */
+            transition: transform 0.3s ease-in-out;
+            /* Smooth transition for sliding in */
+            z-index: 51;
+            /* Ensures it's above other content but below the toggle button */
+            display: flex;
+            flex-direction: column;
+            /* Aligns links vertically */
+            padding-top: 56px;
+            /* Height of the navbar to start links below it */
+        }
+
+        #menu-toggle {
+            cursor: pointer;
+            /* Makes the toggle icon behave like a clickable button */
+            z-index: 52;
+            /* Ensures the toggle button is above the mobile menu */
         }
     </style>
 </head>
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="bg-gray-800 bg-opacity-10 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Home link combined -->
             <div class="flex items-center space-x-4 text-lg font-bold">
@@ -78,7 +112,7 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
+        class="hidden bg-gray-800 text-white bg-opacity-10 rounded-b-xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
         <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
         <a href="work-experience.html" class="block py-2 hover:text-blue-500">Experience</a>
         <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
@@ -261,11 +295,15 @@
     </div>
 
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('mobile-menu');
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.style.transform === 'translateX(0%)') {
+                mobileMenu.style.transform = 'translateX(100%)'; // Hides the menu off the screen to the right
+            } else {
+                mobileMenu.style.transform = 'translateX(0%)'; // Brings the menu onto the screen
+            }
         });
+
     </script>
 </body>
 
