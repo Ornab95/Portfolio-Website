@@ -4,19 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Ambassador - Experience</title>
+    <title>Ornab Biswass | Junior Software Engineer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta name="description"
+        content="Portfolio of Ornab Biswass, a passionate Junior Software Engineer specializing in Java & Spring-Boot with projects in Angular, Tailwind CSS, and Full-Stack Development.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="og:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="og:image" content="Photo/OrnabBiswas.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="twitter:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="twitter:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="twitter:image" content="Photo/OrnabBiswas.jpg">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            /* For Safari compatibility */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* More transparent background */
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-gray-800 text-white p-4 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-lg font-bold">
-                <a href="index.html" class="hover:text-blue-200">Ornab Biswass</a>
+            <!-- Logo and Home link combined -->
+            <div class="flex items-center space-x-4 text-lg font-bold">
+                <img src="Photo/OrnabBiswas.jpg" alt="Ornab Biswass" class="w-10 h-10 rounded-full object-cover">
+                <a href="index.html" class="hover:text-blue-300 transition font-bold">Ornab Biswass</a>
             </div>
             <!-- Mobile Menu Button -->
-            <div class="flex md:hidden">
+            <div class="md:hidden">
                 <button id="menu-toggle" class="text-white focus:outline-none">
                     <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
@@ -25,11 +65,13 @@
                 </button>
             </div>
             <!-- Navbar Links -->
-            <ul id="nav-links" class="hidden md:flex md:space-x-6 md:items-center">
-                <li><a href="#KormoJobs" class="hover:text-blue-300 transition-colors">Kormo Jobs</a></li>
-                <li><a href="#Shomvob" class="hover:text-blue-300 transition-colors">Shomvob</a></li>
-                <li><a href="#about" class="hover:text-blue-300 transition-colors">About Me</a></li>
-                <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+            <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html" class="hover:text-blue-300 transition font-bold">Home</a></li>
+                <li><a href="work-experience.html" class="hover:text-blue-300 transition font-bold">Experience</a></li>
+                <li><a href="projects.html" class="hover:text-blue-300 transition font-bold">Projects</a></li>
+                <li><a href="#achievements" class="hover:text-blue-300 transition font-bold">Achievements</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition font-bold">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition font-bold">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -37,11 +79,12 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu"
         class="hidden bg-gray-800 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
-        <div class="flex flex-col space-y-4">
-            <a href="#KormoJobs" class="hover:text-blue-300 transition-colors">Kormo Jobs</a>
-            <a href="#Shomvob" class="hover:text-blue-300 transition-colors">Shomvob</a>
-            <a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a>
-        </div>
+        <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
+        <a href="work-experience.html" class="block py-2 hover:text-blue-500">Experience</a>
+        <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="#about" class="block py-2 hover:text-blue-500">About</a>
+        <a href="#achievements" class="block py-2 hover:text-blue-500">Achievements</a>
+        <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
     </div>
 
 
@@ -149,10 +192,10 @@
         </div>
     </footer>
     <script>
-        // Toggle mobile menu
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
         });
     </script>
 </body>

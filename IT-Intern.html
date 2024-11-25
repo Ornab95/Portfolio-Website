@@ -4,23 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Intern - Experience</title>
+    <title>Ornab Biswass | Junior Software Engineer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta name="description"
+        content="Portfolio of Ornab Biswass, a passionate Junior Software Engineer specializing in Java & Spring-Boot with projects in Angular, Tailwind CSS, and Full-Stack Development.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="og:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="og:image" content="Photo/OrnabBiswas.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="twitter:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="twitter:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="twitter:image" content="Photo/OrnabBiswas.jpg">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            /* For Safari compatibility */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* More transparent background */
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-gray-800 text-white p-4 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="text-lg font-bold">
-                <a href="index.html" class="hover:text-blue-200">Ornab Biswass</a>
+            <!-- Logo and Home link combined -->
+            <div class="flex items-center space-x-4 text-lg font-bold">
+                <img src="Photo/OrnabBiswas.jpg" alt="Ornab Biswass" class="w-10 h-10 rounded-full object-cover">
+                <a href="index.html" class="hover:text-blue-300 transition font-bold">Ornab Biswass</a>
             </div>
             <!-- Mobile Menu Button -->
-            <div class="flex md:hidden">
+            <div class="md:hidden">
                 <button id="menu-toggle" class="text-white focus:outline-none">
                     <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
@@ -29,23 +65,25 @@
                 </button>
             </div>
             <!-- Navbar Links -->
-            <ul id="nav-links" class="hidden md:flex md:space-x-6 md:items-center">
-                <li><a href="#Overview" class="hover:text-blue-300 transition-colors">Overview</a></li>
-                <li><a href="#Key-Responsibilities" class="hover:text-blue-300 transition-colors">Key
-                        Responsibilities</a></li>
-                <li><a href="#projects" class="hover:text-blue-300 transition-colors">Projects</a></li>
-                <li><a href="#about" class="hover:text-blue-300 transition-colors">About Me</a></li>
-                <li><a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a></li>
+            <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html" class="hover:text-blue-300 transition font-bold">Home</a></li>
+                <li><a href="work-experience.html" class="hover:text-blue-300 transition font-bold">Experience</a></li>
+                <li><a href="projects.html" class="hover:text-blue-300 transition font-bold">Projects</a></li>
+                <li><a href="#achievements" class="hover:text-blue-300 transition font-bold">Achievements</a></li>
+                <li><a href="#about" class="hover:text-blue-300 transition font-bold">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-300 transition font-bold">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 text-white rounded-lg p-4 absolute item-center top-16 left-0 w-full z-10 shadow-md md:hidden">
-        <a href="#projects" class="block py-2 hover:text-blue-500">Projects</a>
-        <a href="#Key-Responsibilities" class="block py-2 hover:text-blue-500">Key Responsibilities</a>
-        <a href="#Overview" class="block py-2 hover:text-blue-500">Overview</a>
+        class="hidden bg-gray-800 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
+        <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
+        <a href="work-experience.html" class="block py-2 hover:text-blue-500">Experience</a>
+        <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="#about" class="block py-2 hover:text-blue-500">About</a>
+        <a href="#achievements" class="block py-2 hover:text-blue-500">Achievements</a>
         <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
     </div>
 
@@ -78,7 +116,7 @@
             <h2 class="text-3xl font-semibold mb-4">Projects</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
                 <!-- Project 1: Talent Acquisition System -->
-                <div class="rounded-lg overflow-hidden ">
+                <div class="rounded-lg overflow-hidden border-4 border-gray-200">
                     <a href="talent-acquisition-system.html">
                         <div class="bg-white p-6">
                             <h3 class="text-xl font-bold mb-2">Talent Acquisition System</h3>
@@ -94,7 +132,7 @@
                 </div>
 
                 <!-- Project 2: Admission System Frontend -->
-                <div class="rounded-lg overflow-hidden ">
+                <div class="rounded-lg overflow-hidden border-4 border-gray-200">
                     <a href="SEUAdmissionSystem.html">
                         <div class="bg-white p-6">
                             <h3 class="text-xl font-bold mb-2">Admission System Frontend</h3>
@@ -112,9 +150,9 @@
         </div>
 
         <!-- About Me Section -->
-        <section id="about" class="py-16 bg-gray-100 ">
+        <section id="about" class="py-6">
             <div class="container mx-auto px-4 md:px-8 bg-white shadow-md border-t-4 border-blue-500 rounded-lg">
-                <h2 class="text-4xl font-bold mb-8 text-gray-800 text-center">About Me</h2>
+                <h2 class="text-4xl font-bold my-8 text-gray-800 text-center">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="w-full md:w-1/3">
                         <img src="Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
@@ -164,12 +202,12 @@
             </div>
         </section>
 
+
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-100">
-            <div
-                class="container mx-auto px-4 md:px-8 bg-white shadow-md text-center p-5  border-t-4 border-blue-500 rounded-lg shadow-md">
+        <section id="contact" class="py-6  border-t-4 border-blue-500 rounded-lg shadow-md">
+            <div class="container mx-auto px-4 md:px-8 bg-white shadow-md text-center p-5">
                 <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
-                <p class="text-lg text-gray-600 mt-4">Feel free to connect with me through any of the platforms below:
+                <p class="text-lg text-gray-600 mt-2">Feel free to connect with me through any of the platforms below:
                 </p>
 
                 <!-- Social Media Links -->
@@ -198,18 +236,20 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-800 text-white py-8">
-            <div class="container mx-auto text-center px-4 md:px-8">
-                <h3 class="text-3xl font-bold">Let's Collaborate!</h3>
-                <p class="mt-4 text-lg">Feel free to reach out for collaboration or job opportunities!</p>
-                <div class="mt-6">
+        <footer class="bg-white">
+            <div
+                class="container mx-auto bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-md">
+                <h3 class="text-3xl font-bold text-gray-800">Let's Collaborate!</h3>
+                <p class="mt-2 text-lg text-gray-700">Feel free to reach out for collaboration or job opportunities!</p>
+                <div class="mt-2">
                     <a href="mailto:ornabbiswass@gmail.com"
-                        class="bg-sky-500 text-white px-6 py-3 rounded-full hover:bg-sky-600 transition duration-300">
+                        class="bg-sky-500 px-6 py-3 rounded-full hover:text-blue-600 transition duration-300">
                         Contact Me
                     </a>
                 </div>
             </div>
         </footer>
+
 
         <script>
             const menuToggle = document.getElementById('menu-toggle');
