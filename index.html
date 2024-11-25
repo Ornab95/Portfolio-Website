@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ornab Biswass | Junior Software Engineer Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="Photo/Theamed.png" />
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -43,13 +43,24 @@
             background-color: rgba(255, 255, 255, 0.5);
             /* More transparent background */
         }
+
+        #mobile-menu {
+            transition: transform 0.3s ease;
+            transform: translateX(0%);
+            /* Start hidden off-screen */
+        }
+
+        #mobile-menu.hidden {
+            transform: translateX(100%);
+            /* Slide in */
+        }
     </style>
 </head>
 
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Home link combined -->
             <div class="flex items-center space-x-4 text-lg font-bold">
@@ -61,7 +72,7 @@
                 <button id="menu-toggle" class="text-white focus:outline-none">
                     <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
-                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0 32-14.3 32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0 32-14.3 32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
                 </button>
             </div>
@@ -76,13 +87,9 @@
             </ul>
         </div>
     </nav>
-
-
-
-
     <!-- Mobile Menu -->
-    <div id="mobile-menu"
-        class="hidden bg-gray-800 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
+    <div id="mobile-menu" class="hidden bg-gray-800 text-white p-4 absolute top-0 right-0 h-full shadow-md md:hidden"
+        style="width: 250px; transform: translateX(100%);">
         <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
         <a href="work-experience.html" class="block py-2 hover:text-blue-500">Experience</a>
         <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
@@ -90,6 +97,7 @@
         <a href="#achievements" class="block py-2 hover:text-blue-500">Achievements</a>
         <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
     </div>
+
 
 
 
@@ -125,11 +133,11 @@
         </div>
     </section>
 
-    <div class="container mx-auto px-4 md:px-8 py-8 bg-white">
-        <!-- Work Experience Section -->
-        <section id="experience" class="py-6 mb-8 bg-white border-t-4 border-blue-500 rounded-md">
-            <div class="container mx-auto ">
-                <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Work Experience</h2>
+    <div class="container mx-auto px-4 md:px-8  bg-white">
+        <!-- Work Experience -->
+        <section class="bg-gray-100 p-6 rounded-lg shadow-lg mb-8 border-t-4 border-blue-500 mt-4 ">
+            <div class="container mx-auto  ">
+                <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Work Experience</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
                     <!-- Experience Card 1 -->
                     <a href="IT-Intern.html"
@@ -183,8 +191,8 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="rounded-md bg-white">
-            <div class="container mx-auto border-t-4 border-blue-500 rounded-md py-6">
+        <section id="projects" class=" bg-gray-100 mb-8 rounded-lg shadow-lg">
+            <div class="container mx-auto mb-8 p-4  border-t-4 border-blue-500 rounded-md">
                 <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Projects</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
                     <!-- Project Card 1 -->
@@ -239,9 +247,7 @@
                         </div>
                         <span class="mt-6 text-blue-500 font-medium hover:underline">Learn More</span>
                     </a>
-
                 </div>
-
                 <div class="text-center mt-4 mb-6">
                     <a href="projects.html"
                         class="bg-white p-4 rounded-2xl text-3xl font-semibold text-blue-400 border-2 border-black hover:bg-blue-100  inline-flex items-center justify-center space-x-2 transition-all duration-300">
@@ -251,18 +257,16 @@
                         <!-- Animated right arrow -->
                     </a>
                 </div>
-
-
             </div>
         </section>
 
         <!-- Achievements Section -->
-        <section id="achievements" class="bg-white">
+        <section id="achievements" class="bg-gray-100 mb-8 rounded-lg shadow-lg">
             <div class="container mx-auto border-t-4 border-blue-500 rounded-md my-6">
                 <h2 class="text-4xl font-bold text-gray-800 my-8 text-center">Achievements</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
                     <!-- Research Defence Achievement -->
-                    <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-semibold text-gray-800">Research Defence</h3>
                         <div class="flex flex-col md:flex-row items-center mt-4">
                             <div class="w-full md:w-1/2 p-4">
@@ -278,7 +282,7 @@
                     </div>
 
                     <!-- Core Java Achievement -->
-                    <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-semibold text-gray-800">Core Java</h3>
                         <div class="flex flex-col md:flex-row items-center mt-4">
                             <div class="w-full p-4">
@@ -294,7 +298,7 @@
                     </div>
 
                     <!-- Employability Skills Program Achievement -->
-                    <div class="bg-sky-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-semibold text-gray-800">21st Century Core Employability Skills Program
                         </h3>
                         <div class="flex flex-col md:flex-row items-center mt-4">
@@ -316,11 +320,9 @@
             </div>
         </section>
 
-
-
         <!-- About Me Section -->
         <section id="about" class="py-6">
-            <div class="container mx-auto px-4 md:px-8 bg-white shadow-md border-t-4 border-blue-500 rounded-lg">
+            <div class="container mx-auto px-4 md:px-8 bg-white shadow-lg border-t-4 border-blue-500 rounded-lg">
                 <h2 class="text-4xl font-bold my-8 text-gray-800 text-center">About Me</h2>
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="w-full md:w-1/3">
@@ -371,11 +373,10 @@
             </div>
         </section>
 
-
         <!-- Contact Section -->
         <section id="contact" class="bg-white mb-6 ">
             <div
-                class="container mx-auto px-4 md:px-8 bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg">
+                class="container mx-auto px-4 md:px-8 bg-white shadow-lg text-center p-5 border-t-4 border-blue-500 rounded-lg">
                 <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
                 <p class="text-lg text-gray-600 mt-2">Feel free to connect with me through any of the platforms below:
                 </p>
@@ -408,7 +409,7 @@
         <!-- Footer -->
         <footer class="bg-white">
             <div
-                class="container mx-auto bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-md">
+                class="container mx-auto bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-lg">
                 <h3 class="text-3xl font-bold text-gray-800">Let's Collaborate!</h3>
                 <p class="mt-2 text-lg text-gray-700">Feel free to reach out for collaboration or job opportunities!</p>
                 <div class="mt-2">
@@ -419,16 +420,14 @@
                 </div>
             </div>
         </footer>
-
-
     </div>
 
     <script>
-        // Toggle mobile menu
         document.getElementById('menu-toggle').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
         });
+
     </script>
 </body>
 
