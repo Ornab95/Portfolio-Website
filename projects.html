@@ -43,11 +43,20 @@
             background-color: rgba(255, 255, 255, 0.5);
             /* More transparent background */
         }
+
+        #mobile-menu {
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Transparent white */
+            -webkit-backdrop-filter: blur(10px);
+            /* Blur effect */
+            backdrop-filter: blur(10px);
+            /* Safari compatibility */
+        }
     </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
-    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md sm:fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-4 text-lg font-bold">
                 <img src="Photo/OrnabBiswas.jpg" alt="Ornab Biswass" class="w-10 h-10 rounded-full object-cover">
@@ -75,14 +84,15 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
-        <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
-        <a href="work-experience.html" class="block py-2 hover:text-blue-500">Experience</a>
+        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        <a href="index.html" class="block py-2 text-black font-bold hover:text-blue-500">Home</a>
+        <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
         <!-- <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a> -->
-        <a href="#about" class="block py-2 hover:text-blue-500">About</a>
-        <a href="#achievements" class="block py-2 hover:text-blue-500">Achievements</a>
-        <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+        <a href="#about" class="block py-2 text-black font-bold hover:text-blue-500">About</a>
+        <a href="#achievements" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a>
+        <a href="#contact" class="block py-2 text-black font-bold hover:text-blue-500">Contact</a>
     </div>
+
     <div class="container mx-auto px-4 md:px-8 py-8 bg-white">
         <!-- Projects Section -->
         <section id="projects" class="py-16 bg-gray-50">

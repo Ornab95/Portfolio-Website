@@ -44,38 +44,13 @@
             /* More transparent background */
         }
 
-        /* Mobile Menu */
         #mobile-menu {
-            position: absolute;
-            top: 0;
-            /* Aligns the menu right below the navbar */
-            right: 0;
-            width: 100%;
-            /* Adjust to your preferred width, or set to 50% for half-screen */
-            height: 100vh;
-            /* Full viewport height */
-            background-color: rgba(58, 58, 58, 0.6);
-            /* Semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Transparent white */
+            -webkit-backdrop-filter: blur(10px);
+            /* Blur effect */
             backdrop-filter: blur(10px);
-            /* Blurry background effect */
-            transform: translateX(100%);
-            /* Starts off the screen to the right */
-            transition: transform 0.3s ease-in-out;
-            /* Smooth transition for sliding in */
-            z-index: 51;
-            /* Ensures it's above other content but below the toggle button */
-            display: flex;
-            flex-direction: column;
-            /* Aligns links vertically */
-            padding-top: 56px;
-            /* Height of the navbar to start links below it */
-        }
-
-        #menu-toggle {
-            cursor: pointer;
-            /* Makes the toggle icon behave like a clickable button */
-            z-index: 52;
-            /* Ensures the toggle button is above the mobile menu */
+            /* Safari compatibility */
         }
     </style>
 </head>
@@ -100,25 +75,25 @@
             </div>
             <!-- Navbar Links -->
             <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
-                <li><a href="index.html" class="hover:text-blue-300 transition font-bold">Home</a></li>
-                <li><a href="work-experience.html" class="hover:text-blue-300 transition font-bold">Experience</a></li>
-                <li><a href="projects.html" class="hover:text-blue-300 transition font-bold">Projects</a></li>
-                <li><a href="#achievements" class="hover:text-blue-300 transition font-bold">Achievements</a></li>
-                <li><a href="#about" class="hover:text-blue-300 transition font-bold">About</a></li>
-                <li><a href="#contact" class="hover:text-blue-300 transition font-bold">Contact</a></li>
+                <li><a href="index.html" class="hover:text-blue-600 transition font-bold">Home</a></li>
+                <li><a href="work-experience.html" class="hover:text-blue-600 transition font-bold">Experience</a></li>
+                <li><a href="projects.html" class="hover:text-blue-600 transition font-bold">Projects</a></li>
+                <li><a href="#achievements" class="hover:text-blue-600 transition font-bold">Achievements</a></li>
+                <li><a href="#about" class="hover:text-blue-600 transition font-bold">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition font-bold">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 text-white bg-opacity-10 rounded-b-xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden">
-        <a href="index.html" class="block py-2 hover:text-blue-500">Home</a>
-        <a href="work-experience.html" class="block py-2 hover:text-blue-500">Experience</a>
+        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        <a href="index.html" class="block py-2 text-black font-bold hover:text-blue-500">Home</a>
+        <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
         <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
-        <a href="#about" class="block py-2 hover:text-blue-500">About</a>
-        <a href="#achievements" class="block py-2 hover:text-blue-500">Achievements</a>
-        <a href="#contact" class="block py-2 hover:text-blue-500">Contact</a>
+        <a href="#about" class="block py-2 text-black font-bold hover:text-blue-500">About</a>
+        <a href="#achievements" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a>
+        <a href="#contact" class="block py-2 text-black font-bold hover:text-blue-500">Contact</a>
     </div>
 
 
