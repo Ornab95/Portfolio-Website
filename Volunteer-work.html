@@ -38,7 +38,7 @@
 
         nav {
             -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(5px);
             /* For Safari compatibility */
             background-color: rgba(255, 255, 255, 0.5);
             /* More transparent background */
@@ -57,7 +57,7 @@
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-gray-800 bg-opacity-10 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Home link combined -->
             <div class="flex items-center space-x-4 text-lg font-bold">
@@ -90,7 +90,7 @@
         class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
         <a href="index.html" class="block py-2 text-black font-bold hover:text-blue-500">Home</a>
         <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
-        <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="projects.html" class="block text-black font-bold py-2 hover:text-blue-500">Projects</a>
         <a href="#about" class="block py-2 text-black font-bold hover:text-blue-500">About</a>
         <a href="#achievements" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a>
         <a href="#contact" class="block py-2 text-black font-bold hover:text-blue-500">Contact</a>
@@ -270,15 +270,11 @@
     </div>
 
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            var mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenu.style.transform === 'translateX(0%)') {
-                mobileMenu.style.transform = 'translateX(100%)'; // Hides the menu off the screen to the right
-            } else {
-                mobileMenu.style.transform = 'translateX(0%)'; // Brings the menu onto the screen
-            }
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
         });
-
     </script>
 </body>
 

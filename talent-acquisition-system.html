@@ -66,13 +66,15 @@
             </div>
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg id="menu-icon" class="w-6 h-6" fill="white" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
                 </button>
             </div>
+
             <!-- Navbar Links -->
             <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
                 <li><a href="index.html" class="hover:text-blue-600 transition font-bold">Home</a></li>
@@ -87,10 +89,10 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        class="hidden bg-gray-200 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
         <a href="index.html" class="block py-2 text-black font-bold hover:text-blue-500">Home</a>
         <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
-        <a href="projects.html" class="block py-2 hover:text-blue-500">Projects</a>
+        <a href="projects.html" class="block text-black font-bold py-2 hover:text-blue-500">Projects</a>
         <a href="#about" class="block py-2 text-black font-bold hover:text-blue-500">About</a>
         <a href="#achievements" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a>
         <a href="#contact" class="block py-2 text-black font-bold hover:text-blue-500">Contact</a>
@@ -299,9 +301,9 @@
                 class="container mx-auto bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-md">
                 <h3 class="text-3xl font-bold text-gray-800">Let's Collaborate!</h3>
                 <p class="mt-2 text-lg text-gray-700">Feel free to reach out for collaboration or job opportunities!</p>
-                <div class="mt-2">
+                <div class="py-2 mt-4">
                     <a href="mailto:ornabbiswass@gmail.com"
-                        class="bg-sky-500 px-6 py-3 rounded-full hover:text-blue-600 transition duration-300">
+                        class="bg-sky-500 px-6 py-3 rounded-full border-2 border-blue-500 mt-4 hover:text-white hover:bg-blue-600 transition duration-300">
                         Contact Me
                     </a>
                 </div>
