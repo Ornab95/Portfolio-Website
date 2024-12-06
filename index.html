@@ -193,10 +193,86 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class=" bg-gray-100 mb-8 rounded-lg shadow-lg">
-            <div class="container mx-auto mb-8 p-4  border-t-4 border-blue-500 rounded-md">
+        <section id="projects" class="bg-gray-100 mb-8 rounded-lg shadow-lg">
+            <div class="container mx-auto mb-8 p-4 border-t-4 border-blue-500 rounded-md">
                 <h2 class="text-4xl font-bold mb-12 text-center text-gray-800">Projects</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- Carousel for Mobile (Up to md) -->
+                <div class="relative md:hidden overflow-hidden">
+                    <!-- Carousel Items -->
+                    <div id="carousel-items" class="flex transition-transform duration-700 ease-in-out">
+                        <!-- Project 1 -->
+                        <div class="min-w-full p-1">
+                            <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
+                                <h3 class="text-2xl font-semibold text-gray-800">Talent Acquisition System</h3>
+                                <p class="text-gray-700 mt-2">
+                                    A recruitment platform developed using Angular, Tailwind CSS, and Spring Boot.
+                                </p>
+                                <ul class="list-disc list-inside mt-4 text-gray-700">
+                                    <li>Job Posting and Application System</li>
+                                    <li>Admin Dashboard for HR management</li>
+                                    <li>Responsive User Interface</li>
+                                    <li>Integration with MongoDB for Data Storage</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mt-4">Technologies Used: Angular, Spring Boot, MongoDB,
+                                    Tailwind
+                                    CSS</p>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="min-w-full p-1">
+                            <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
+                                <h3 class="text-2xl font-semibold text-gray-800">SEU Admission System</h3>
+                                <p class="text-gray-700 mt-2">
+                                    Developed the front-end for Southeast University's admission system.
+                                </p>
+                                <ul class="list-disc list-inside mt-4 text-gray-700">
+                                    <li>Student Registration and Application Forms</li>
+                                    <li>Admin Dashboard for Admission Review</li>
+                                    <li>Mobile-responsive Design</li>
+                                    <li>Integrated with Backend APIs</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mt-4">Technologies Used: HTML, Tailwind CSS, JavaScript
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="min-w-full p-1">
+                            <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
+                                <h3 class="text-2xl font-semibold text-gray-800">Portfolio Website</h3>
+                                <p class="text-gray-700 mt-2">
+                                    A personal portfolio website showcasing my projects and achievements.
+                                </p>
+                                <ul class="list-disc list-inside mt-4 text-gray-700">
+                                    <li>Designed and developed a responsive portfolio</li>
+                                    <li>Used Tailwind CSS and JavaScript for front-end</li>
+                                    <li>Integrated project showcases and contact form</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mt-4">Technologies Used: HTML, Tailwind CSS, JavaScript
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Project 4 -->
+                        <div class="min-w-full p-1">
+                            <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
+                                <h3 class="text-2xl font-semibold text-gray-800">Basic Calculator</h3>
+                                <p class="text-gray-700 mt-2">
+                                    A desktop calculator created using JavaFX, following MVC design principles.
+                                </p>
+                                <ul class="list-disc list-inside mt-4 text-gray-700">
+                                    <li>Interactive User Interface</li>
+                                    <li>Efficient calculations with memory support</li>
+                                </ul>
+                                <p class="text-sm text-gray-500 mt-4">Technologies Used: JavaFX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid for Larger Screens (md and up) -->
+                <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <!-- Project Card 1 -->
                     <a href="talent-acquisition-system.html"
                         class="bg-white rounded-lg shadow-lg hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between p-6">
@@ -244,12 +320,13 @@
                         <span class="mt-6 text-blue-500 font-medium hover:underline">Learn More</span>
                     </a>
                 </div>
-                <div class="text-center mt-4 mb-6">
+                <div class="text-center my-2 md:mt-4 md:mb-6">
                     <a href="projects.html"
-                        class="bg-gray-100 p-4 rounded-full text-3xl font-semibold border-2 hover:text-white  hover:bg-blue-600  inline-flex items-center justify-center space-x-2 transition-all duration-300">
+                        class="bg-gray-100 h-14 w-56 p-4 rounded-full text-xl font-semibold border-2 hover:text-blue-500 hover:border-6 hover:border-blue-500 inline-flex items-center justify-center transition-all duration-300">
                         <span>See All Projects</span>
                     </a>
                 </div>
+
             </div>
         </section>
 
@@ -258,7 +335,7 @@
             <div class="container mx-auto border-t-4 border-blue-500 rounded-md my-6">
                 <h2 class="text-4xl font-bold text-gray-800 my-8 text-center">Achievements</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
-                    <!-- Research Defence Achievement -->
+                    <!-- Research Defense Achievement -->
                     <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-semibold text-gray-800">Research Defence</h3>
                         <div class="flex flex-col md:flex-row items-center mt-4">
@@ -311,14 +388,13 @@
                         </div>
                         <div class="mt-4 text-center">
                             <a href="Ornab Biswass_SEU.pdf" target="_blank"
-                                class="bg-ehite border-2 hover:text-white text-Black  px-4 py-2 rounded-full hover:bg-blue-600 transition">
+                                class="bg-ehite border-2 hover:text-blue-500 text-Black  px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
                                 Download PDF
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- About Me Section -->
@@ -408,27 +484,45 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-white">
+        <footer class="bg-white mb-6">
             <div
                 class="container mx-auto bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-lg">
                 <h3 class="text-3xl font-bold text-gray-800">Let's Collaborate!</h3>
                 <p class="mt-2 text-lg text-gray-700">Feel free to reach out for collaboration or job opportunities!</p>
                 <div class="py-2 mt-4">
                     <a href="mailto:ornabbiswass@gmail.com"
-                        class="bg-sky-500 px-6 py-3 rounded-full border-2 border-blue-500 mt-4 hover:text-white hover:bg-blue-600 transition duration-300">
+                        class="bg-sky-500 px-6 py-3 rounded-full border-2 border-black mt-4 hover:border-6 hover:border-blue-500 hover:text-blue-500 transition duration-300">
                         Contact Me
                     </a>
                 </div>
             </div>
         </footer>
-
     </div>
+
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('mobile-menu');
         menuToggle.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
+
+
+        const carouselItems = document.getElementById("carousel-items");
+        const totalItems = carouselItems.children.length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const itemWidth = carouselItems.children[0].offsetWidth;
+            carouselItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        function autoSlide() {
+            currentIndex = (currentIndex + 1) % totalItems; // Cycle through items
+            updateCarousel();
+        }
+
+        setInterval(autoSlide, 3500); // Change slide every 3.5 seconds
+        window.addEventListener("resize", updateCarousel); // Adjust on window resize
     </script>
 </body>
 
