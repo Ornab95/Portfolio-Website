@@ -22,7 +22,7 @@
     <meta property="og:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
     <meta property="og:description"
         content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
-    <meta property="og:image" content="Photo/Theamed.png">
+    <meta property="og:image" content="Photo/OrnabBiswass.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -41,18 +41,80 @@
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             /* For Safari compatibility */
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(180, 157, 157, 0.5);
             /* More transparent background */
         }
 
         #mobile-menu {
             position: fixed;
-            background-color: rgba(255, 255, 255, 0.5);
-            /* Transparent white */
+            background-color: rgba(151, 146, 146, 0.8);
+            /* Slightly more opaque for better visibility */
             -webkit-backdrop-filter: blur(10px);
             /* Blur effect */
             backdrop-filter: blur(10px);
             /* Safari compatibility */
+            z-index: 1000;
+            /* Higher than hero section content */
+        }
+
+        /* Ensure hero section's z-index is lower */
+        .hero-section-content {
+            position: relative;
+            z-index: 10;
+            /* Lower than the mobile menu */
+        }
+
+        .hero-section-overlay {
+            z-index: 5;
+            /* Even lower */
+        }
+
+        /* From Uiverse.io by cssbuttons-io */
+        button {
+            align-items: center;
+            background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+            border: 0;
+            border-radius: 10px;
+            box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+            box-sizing: border-box;
+            color: #ffffff;
+            display: flex;
+            font-size: 18px;
+            justify-content: center;
+            line-height: 1em;
+            max-width: 100%;
+            min-width: 140px;
+            padding: 3px;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        button:active,
+        button:hover {
+            outline: 0;
+        }
+
+        button span {
+            background-color: rgb(5, 6, 45);
+            padding: 16px 24px;
+            border-radius: 6px;
+            width: 100%;
+            height: 100%;
+            transition: 300ms;
+
+        }
+
+        button:hover span {
+            background: none;
+        }
+
+        button:active {
+            transform: scale(0.9);
         }
     </style>
 </head>
@@ -70,12 +132,12 @@
             </div>
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
+                <a id="menu-toggle" class="text-white focus:outline-none">
                     <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
-                </button>
+                </a>
             </div>
             <!-- Navbar Links -->
             <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
@@ -89,6 +151,7 @@
         </div>
     </nav>
 
+
     <!-- Mobile Menu -->
     <div id="mobile-menu"
         class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
@@ -101,9 +164,15 @@
     </div>
 
     <!-- Hero Section -->
-    <section style="background-image: url('Photo/BG-Black.jpg'); background-size: cover; background-position: center;"
-        class="bg-gray-900 text-white h-screen flex items-center justify-center">
-        <div class="text-center px-4 md:px-8">
+    <section class="bg-gray-900 text-white h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Video -->
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="Photo/Background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 md:px-8">
             <!-- Profile Image -->
             <img src="Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
                 class="rounded-full mx-auto w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 object-cover mb-6 border-4 border-blue-500">
@@ -122,15 +191,26 @@
 
             <!-- Action Buttons -->
             <div class="flex justify-center space-x-4">
-                <a href="#projects"
-                    class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">View
-                    My Projects</a>
-                <a href="OrnabBiswassResume.pdf" target="_blank"
-                    class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">View My
-                    Resume</a>
+                <!-- View My Projects Button -->
+                <a href="#projects">
+                    <button>
+                        <span class="text">View My Projects</span>
+                    </button>
+                </a>
+
+                <!-- View My Resume Button -->
+                <a href="OrnabBiswassResume.pdf" target="_blank">
+                    <button>
+                        <span class="text">View My Resume</span>
+                    </button>
+                </a>
             </div>
         </div>
+
+        <!-- Overlay (optional for better text visibility) -->
+        <div class="absolute inset-0 bg-black opacity-50 z-5"></div>
     </section>
+
 
     <div class="container mx-auto px-4 md:px-8  bg-white">
         <!-- Work Experience -->

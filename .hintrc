@@ -26,6 +26,8 @@
           "backdrop-filter"
         ]
       }
-    ]
+    ],
+    "compat-api/html": "off",
+    "css-prefix-order": "off"
   }
 }

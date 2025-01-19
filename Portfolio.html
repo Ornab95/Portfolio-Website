@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ornab Biswass</title>
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Portfolio of Ornab Biswass showcasing projects, skills, and achievements.">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 bg-opacity-90 text-white p-4 shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold hover:text-blue-500">Ornab Biswass</a>
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+        <p class="text-lg md:text-xl mb-6">Junior Software Engineer | Full-Stack Developer</p>
+        <a href="#projects" class="bg-gray-100 text-gray-900 px-6 py-2 rounded-lg hover:bg-gray-200 transition">View My
+            Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                Hi! I'm Ornab Biswass, a passionate junior software engineer specializing in Java, Spring Boot, Angular,
+                and Tailwind CSS.
+                I thrive in designing efficient and scalable web applications, and I'm always eager to learn and take on
+                new challenges.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Talent Acquisition System</h3>
+                    <p class="text-gray-600 mt-2">Developed a recruitment platform using Angular, Tailwind CSS, and
+                        Spring Boot.</p>
+                    <a href="talent-acquisition-system.html"
+                        class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">SEU Admission System</h3>
+                    <p class="text-gray-600 mt-2">Front-end development for Southeast University's admission system.</p>
+                    <a href="SEUAdmissionSystem.html" class="text-blue-500 hover:underline mt-4 inline-block">Learn
+                        More</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Portfolio Website</h3>
+                    <p class="text-gray-600 mt-2">A responsive and interactive portfolio website showcasing my work.</p>
+                    <a href="Portfolio.html" class="text-blue-500 hover:underline mt-4 inline-block">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-6">Feel free to reach out for collaboration or job opportunities!</p>
+            <a href="mailto:ornabbiswass@gmail.com"
+                class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Ornab Biswass. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
