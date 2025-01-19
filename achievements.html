@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | Ornab Biswass</title>
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <base href="assets/"> -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta name="description"
+        content="Portfolio of Ornab Biswass, a passionate Junior Software Engineer specializing in Java & Spring-Boot with projects in Angular, Tailwind CSS, and Full-Stack Development.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="og:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="og:image" content="Photo/OrnabBiswas.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="twitter:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="twitter:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="twitter:image" content="Photo/OrnabBiswas.jpg">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            /* For Safari compatibility */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* More transparent background */
+        }
+
+        #mobile-menu {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Transparent white */
+            -webkit-backdrop-filter: blur(10px);
+            /* Blur effect */
+            backdrop-filter: blur(10px);
+            /* Safari compatibility */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Home link combined -->
+            <div class="flex items-center space-x-4 text-lg font-bold">
+                <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass" class="w-10 h-10 rounded-full object-cover">
+                <a href="index.html" class="hover:text-blue-600 transition font-bold">Ornab Biswass</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html" class="hover:text-blue-600 transition font-bold">Home</a></li>
+                <li><a href="projects.html" class="hover:text-blue-600 transition font-bold">Projects</a></li>
+                <li><a href="work-experience.html" class="hover:text-blue-600 transition font-bold">Experience</a></li>
+                <li><a href="#about" class="hover:text-blue-600 transition font-bold">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition font-bold">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        <a href="index.html" class="block py-2 text-black font-bold hover:text-blue-500">Home</a>
+        <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
+        <a href="projects.html" class="block text-black font-bold py-2 hover:text-blue-500">Projects</a>
+        <a href="#about" class="block py-2 text-black font-bold hover:text-blue-500">About</a>
+        <!-- <a href="achievements.html" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a> -->
+        <a href="#contact" class="block py-2 text-black font-bold hover:text-blue-500">Contact</a>
+    </div>
+
+    <section class="container mx-auto px-4 md:px-8 pt-16">
+        <h1 class="text-4xl font-bold text-center mb-12">Achievements</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Research Defence -->
+            <article class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h3 class="text-2xl font-semibold text-gray-800">Research Defence: Breast Cancer Classification</h3>
+                <div class="flex flex-col md:flex-row items-center mt-4">
+                    <div class="w-full md:w-1/2 p-4">
+                        <p class="text-gray-700">
+                            This study leveraged the Wisconsin Diagnostic Breast Cancer Dataset (WDBC) to predict breast
+                            cancer
+                            malignancy using five machine learning classifiers: Logistic Regression, Decision Trees,
+                            Random Forest,
+                            K-Nearest Neighbors, and Naive Bayes.
+                        </p>
+                        <ul class="text-gray-700 mt-4 list-disc pl-5">
+                            <li><strong>Best Model:</strong> K-Nearest Neighbors (98.83% accuracy).</li>
+                            <li>Employed hyperparameter tuning to optimize model performance.</li>
+                            <li>Highlighted the significance of early cancer detection through ML techniques.</li>
+                        </ul>
+                        <p class="text-gray-500 text-sm mt-4">Research Date: February 2024</p>
+                    </div>
+                    <!-- Image Section -->
+                    <div class="w-full md:w-1/2 p-4 flex justify-center items-center">
+                        <img src="assets/Photo/OrnabBiswas1.jpg" alt="Research Defence Day"
+                            class="rounded-lg object-cover w-full max-w-sm h-auto shadow-md transition-transform transform hover:scale-105">
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!-- Excel Essentials for Workplace Productivity -->
+            <section class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h2 class="text-3xl font-semibold text-gray-800">Excel Essentials for Workplace Productivity</h2>
+                <p class="text-md text-gray-500 mb-4">Completed: December 2024</p>
+                <p class="text-gray-700">
+                    The "Excel Essentials for Workplace Productivity" course teaches practical, hands-on skills for
+                    using Excel
+                    efficiently in a professional setting. Key topics include:
+                </p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li>Advanced Excel functions, such as <strong>VLOOKUP</strong>, <strong>HLOOKUP</strong>, and
+                        <strong>INDEX-MATCH</strong>.
+                    </li>
+                    <li>Creating dynamic <strong>pivot tables</strong> and dashboards for data visualization.</li>
+                    <li>Automating repetitive tasks using <strong>macros</strong> and <strong>formulas</strong>.</li>
+                    <li>Organizing, analyzing, and presenting data effectively to support decision-making.</li>
+                </ul>
+                <p class="mt-2 text-gray-700">
+                    This course equips participants with the expertise to manage large datasets, automate workflows, and
+                    present
+                    insights clearly, enhancing workplace efficiency.
+                </p>
+                <div class="mt-4 text-center">
+                    <a href="assets/pdf/Excel Essentials for Workplace Productivity(OrnabBiswass).pdf" target="_blank"
+                        class="bg-white border-2 hover:text-blue-500 text-black px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
+                        Download PDF
+                    </a>
+                </div>
+            </section>
+
+            <!-- Unleashing Cognitive Empowerment -->
+            <section class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h2 class="text-3xl font-semibold text-gray-800">Unleashing Cognitive Empowerment</h2>
+                <p class="text-md text-gray-500 mb-4">Completed: December 2024</p>
+                <p class="text-gray-700">
+                    "Unleashing Cognitive Empowerment" is a transformative course designed to boost intellectual
+                    capabilities and
+                    strategic thinking. The course covers:
+                </p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li>Enhancing <strong>critical thinking</strong> and decision-making through cognitive science
+                        principles.</li>
+                    <li>Leveraging problem-solving frameworks to tackle complex challenges.</li>
+                    <li>Learning to process information more effectively and creatively.</li>
+                    <li>Cultivating mindfulness and mental clarity to increase productivity.</li>
+                </ul>
+                <p class="mt-2 text-gray-700">
+                    This course is ideal for individuals looking to optimize their mental performance and bring a
+                    proactive
+                    mindset to problem-solving and innovation.
+                </p>
+                <div class="mt-4 text-center">
+                    <a href="assets/pdf/Unleashing Cognitive Empowermen(OrnabBiswass).pdf" target="_blank"
+                        class="bg-white border-2 hover:text-blue-500 text-black px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
+                        Download PDF
+                    </a>
+                </div>
+            </section>
+
+            <!-- Workplace Communication Essentials -->
+            <section class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h2 class="text-3xl font-semibold text-gray-800">Workplace Communication Essentials</h2>
+                <p class="text-md text-gray-500 mb-4">Completed: December 2024</p>
+                <p class="text-gray-700">
+                    The "Workplace Communication Essentials" course focuses on enhancing interpersonal communication
+                    skills
+                    critical for workplace success. Key takeaways include:
+                </p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li>Mastering <strong>active listening</strong> to build stronger professional relationships.</li>
+                    <li>Gaining self-confidence in verbal and non-verbal communication.</li>
+                    <li>Developing proficiency in written communication, especially in crafting effective emails.</li>
+                    <li>Learning strategies to navigate and resolve workplace conflicts through clear and empathetic
+                        dialogue.</li>
+                </ul>
+                <p class="mt-2 text-gray-700">
+                    By the end of the course, participants gain the confidence and skills to excel in collaborative
+                    environments,
+                    ensuring their ideas and contributions are effectively communicated.
+                </p>
+                <div class="mt-4 text-center">
+                    <a href="assets/pdf/Workplace Communication Essentials(OrnabBiswass).pdf" target="_blank"
+                        class="bg-white border-2 hover:text-blue-500 text-black px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
+                        Download PDF
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Art of Problem Definition -->
+            <section class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h2 class="text-3xl font-semibold text-gray-800">Art of Problem Definition</h2>
+                <p class="text-md text-gray-500 mb-4">Completed: December 2024</p>
+                <p class="text-gray-700">
+                    The "Art of Problem Definition" is a comprehensive course that equips individuals with the tools and
+                    mindset
+                    needed to approach problems systematically. Participants learn to:
+                </p>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li>Identify root causes and distinguish between symptoms and core issues.</li>
+                    <li>Frame problems in a way that fosters innovative solutions.</li>
+                    <li>Analyze complex challenges using structured methodologies and case studies.</li>
+                    <li>Develop clear, concise problem statements to guide strategic decision-making.</li>
+                </ul>
+                <p class="mt-2 text-gray-700">This course empowers learners to communicate problems effectively, paving
+                    the way
+                    for actionable and impactful solutions.</p>
+                <div class="mt-4 text-center">
+                    <a href="assets/pdf/Art of Problem Definition(OrnabBiswass).pdf" target="_blank"
+                        class="bg-white border-2 hover:text-blue-500 text-black px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
+                        Download PDF
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Core Java Achievement -->
+            <section class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h3 class="text-2xl font-semibold text-gray-800">Core Java</h3>
+                <div class="flex flex-col md:flex-row items-center mt-4">
+                    <div class="w-full">
+                        <p class="text-gray-700">Demonstrated proficiency in core Java programming concepts such as
+                            OOP principles, data structures, and algorithms. Completed multiple projects,
+                            including a basic banking system and a personal library management system.</p>
+                        <p class="text-gray-500 text-sm mt-2">Duration: 02/2021 - 08/2021</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Employability Skills Program Achievement -->
+            <section class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+                <h3 class="text-2xl font-semibold text-gray-800">21st Century Core Employability Skills Program</h3>
+                <div class="flex flex-col md:flex-row items-center mt-4">
+                    <div class="w-full">
+                        <p class="text-gray-700">Participated in a comprehensive employability skills program aimed at
+                            improving communication, leadership, teamwork, problem-solving, and critical
+                            thinking. This program included workshops, presentations, and practical exercises to enhance
+                            workplace skills.</p>
+                        <p class="text-gray-500 text-sm mt-2">Duration: 05/2021 - 08/2021</p>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="assets/pdf/Ornab Biswass_SEU.pdf" target="_blank"
+                        class="bg-white border-2 hover:text-blue-500 text-black px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
+                        Download PDF
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- About Me Section -->
+        <section id="about" class="py-6">
+            <div class="container mx-auto px-4 md:px-8 bg-white shadow-lg border-t-4 border-blue-500 rounded-lg">
+                <h2 class="text-4xl font-bold my-8 text-gray-800 text-center">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/3">
+                        <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
+                            class="rounded-full mx-auto w-64 h-64 object-cover border-4 border-blue-500">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Hi! I'm <span class="font-semibold text-blue-600">Ornab Biswass</span>, a passionate junior
+                            software
+                            engineer with a strong background in full-stack development. I am currently pursuing my
+                            Bachelor's
+                            degree in Computer Science from Southeast University, where I've built a solid foundation in
+                            programming, algorithm design, databases, and software engineering.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            I'm proficient in front-end technologies like Angular and Tailwind CSS, and I have hands-on
+                            experience working with back-end technologies such as Java and Spring Boot. My journey also
+                            includes
+                            building projects like the <span class="font-semibold text-blue-600">Talent Acquisition
+                                System</span> and the <span class="font-semibold text-blue-600">SEU Admission
+                                System</span>.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            I have a strong interest in Artificial Intelligence, and I'm planning to pursue an MSc in AI
+                            at
+                            FAU
+                            Erlangen-Nürnberg to further enhance my knowledge and skills in this area. I’m a quick
+                            learner
+                            and
+                            always eager to tackle new challenges, whether it’s in software development, research, or
+                            IT.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Apart from coding, I have experience in IT internship work, collaborating with senior
+                            developers,
+                            and leading web development tasks. I'm also a volunteer who helped students with job
+                            opportunities
+                            through Kormo Jobs by Google and Shomvob Technologies Ltd.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Feel free to check out my projects or reach out if you'd like to collaborate or just chat
+                            about
+                            technology!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white mb-6 ">
+            <div
+                class="container mx-auto px-4 md:px-8 bg-white shadow-lg text-center p-5 border-t-4 border-blue-500 rounded-lg">
+                <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mt-2">Feel free to connect with me through any of the platforms below:
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="mt-8 flex justify-center space-x-8">
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/Ornab95" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome GitHub Icon -->
+                        <i class="fab fa-github h-8 w-8"></i>
+                    </a>
+
+                    <!-- LinkedIn Link -->
+                    <a href="https://www.linkedin.com/in/ornabbiswass/" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome LinkedIn Icon -->
+                        <i class="fab fa-linkedin h-8 w-8"></i>
+                    </a>
+
+                    <!-- Email Link -->
+                    <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome Email Icon -->
+                        <i class="fas fa-envelope h-8 w-8"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white mb-6">
+            <div class="container mx-auto bg-white text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold text-gray-800">Let's Collaborate!</h3>
+                <p class="mt-2 text-lg text-gray-700">Feel free to reach out for collaboration or job opportunities!</p>
+                <div class="py-2 mt-4">
+                    <a href="mailto:ornabbiswass@gmail.com"
+                        class="bg-sky-500 px-6 py-3 rounded-full border-2 border-black mt-4 hover:border-6 hover:border-blue-500 hover:text-blue-500 transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
