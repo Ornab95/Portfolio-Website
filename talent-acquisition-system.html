@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ornab Biswass | TAS</title>
-    <link rel="icon" type="image/x-icon" href="assets/Photo/favicon.ico" />
+    <title>TAS | Ornab Biswass</title>
+    <link rel="icon" type="image/x-icon" href="assets/Photo/FavconAB.png" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -53,6 +54,13 @@
             backdrop-filter: blur(10px);
             /* Safari compatibility */
         }
+
+        .neon-hover:hover {
+            text-shadow: 0 0 5px rgba(17, 52, 188, 0.7),
+                0 0 10px rgba(255, 69, 0, 0.7),
+                0 0 15px rgba(255, 165, 0, 0.7),
+                0 0 20px rgba(255, 255, 0, 0.7);
+        }
     </style>
 </head>
 
@@ -62,41 +70,45 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Home link combined -->
             <div class="flex items-center space-x-4 text-lg font-bold">
-                <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass" class="w-10 h-10 rounded-full object-cover">
-                <a href="index.html" class="hover:text-blue-300 transition font-bold">Ornab Biswass</a>
+                <a href="index.html"
+                    class="flex items-center space-x-4 hover:text-blue-300 transition font-bold neon-hover">
+                    <img src="assets/Photo/FavconAB.png" alt="Ornab Biswass"
+                        class="w-10 h-10 rounded-full object-cover">
+                    <span>Ornab Biswass</span>
+                </a>
             </div>
+
+
             <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="menu-toggle" class="focus:outline-none">
-                    <svg id="menu-icon" class="w-6 h-6" fill="white" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512">
+            <div class="md:hidden ">
+                <a id="menu-toggle" class="text-white focus:outline-none ">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
                     </svg>
-                </button>
+                </a>
             </div>
-
             <!-- Navbar Links -->
-            <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
-                <li><a href="index.html" class="hover:text-blue-600 transition font-bold">Home</a></li>
-                <li><a href="work-experience.html" class="hover:text-blue-600 transition font-bold">Experience</a></li>
-                <li><a href="projects.html" class="hover:text-blue-600 transition font-bold">Projects</a></li>
-                <li><a href="achievements.html" class="hover:text-blue-600 transition font-bold">Achievements</a></li>
-                <li><a href="#about" class="hover:text-blue-600 transition font-bold">About</a></li>
-                <li><a href="#contact" class="hover:text-blue-600 transition font-bold">Contact</a></li>
+            <ul id="nav-links" class="hidden md:flex space-x-6 items-center ">
+                <li><a href="index.html" class=" transition font-bold neon-hover">Home</a></li>
+                <li><a href="work-experience.html" class=" transition font-bold neon-hover">Experience</a></li>
+                <li><a href="projects.html" class=" transition font-bold neon-hover">Projects</a>
+                </li>
+                <li><a href="achievements.html" class=" transition font-bold neon-hover">Achievements</a></li>
+                <li><a href="#about" class=" transition font-bold neon-hover">About</a></li>
+                <li><a href="#contact" class=" transition font-bold neon-hover">Contact</a></li>
             </ul>
         </div>
     </nav>
-
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-200 bg-opacity-50 text-white rounded-b-lg p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
-        <a href="index.html" class="block py-2 text-black font-bold hover:text-blue-500">Home</a>
-        <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
-        <a href="projects.html" class="block text-black font-bold py-2 hover:text-blue-500">Projects</a>
-        <a href="#about" class="block py-2 text-black font-bold hover:text-blue-500">About</a>
-        <a href="achievements.html" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a>
-        <a href="#contact" class="block py-2 text-black font-bold hover:text-blue-500">Contact</a>
+        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        <a href="index.html" class="block text-black font-bold py-2 neon-hover">Home</a>
+        <a href="work-experience.html" class="block text-black font-bold py-2 neon-hover">Experience</a>
+        <a href="projects.html" class="block text-black font-bold py-2 neon-hover">Projects</a>
+        <a href="#about" class="block text-black font-bold py-2 neon-hover">About</a>
+        <a href="achievements.html" class="block text-black font-bold py-2 neon-hover">Achievements</a>
+        <a href="#contact" class="block text-black font-bold py-2 neon-hover">Contact</a>
     </div>
 
     <div class="container mx-auto px-4 md:px-8 pt-16">
@@ -266,13 +278,26 @@
         <!-- Contact Section -->
         <section id="contact" class="bg-white mb-6 ">
             <div
-                class="container mx-auto px-4 md:px-8 bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg">
+                class="container mx-auto px-4 md:px-8 bg-white shadow-lg text-center p-5 border-t-4 border-blue-500 rounded-lg">
                 <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
                 <p class="text-lg text-gray-600 mt-2">Feel free to connect with me through any of the platforms below:
                 </p>
 
                 <!-- Social Media Links -->
                 <div class="mt-8 flex justify-center space-x-8">
+
+                    <!-- Email Link -->
+                    <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome Email Icon -->
+                        <i class="fas fa-envelope h-8 w-8"></i>
+                    </a>
+
+                    <!-- WhatsApp Link -->
+                    <a href="https://wa.me/8801852128663" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <i class="fab fa-whatsapp h-8 w-8"></i>
+                    </a>
+
                     <!-- GitHub Link -->
                     <a href="https://github.com/Ornab95" target="_blank"
                         class="text-2xl text-gray-800 hover:text-blue-600">
@@ -287,43 +312,33 @@
                         <i class="fab fa-linkedin h-8 w-8"></i>
                     </a>
 
+                    <!-- WhatsApp Link
+                            <a href="https://wa.me/8801852128663" target="_blank"
+                                class="text-2xl text-gray-800 hover:text-blue-600">
+                                <i class="fab fa-whatsapp h-8 w-8"></i>
+                            </a> -->
+
                     <!-- Email Link -->
-                    <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
-                        <!-- Font Awesome Email Icon -->
-                        <i class="fas fa-envelope h-8 w-8"></i>
-                    </a>
+                    <!-- <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
+                                <span>ornabbiswass@gmail.com</span>
+                            </a> -->
                 </div>
+                <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-white neon-hover">
+                    <span class="text-blue-500 font-semibold hover:text-white">ornabbiswass@gmail.com</span>
+                </a>
             </div>
         </section>
-        <!-- Footer -->
-        <footer class="bg-white mb-6">
-            <div
-                class="container mx-auto bg-white shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-lg">
 
-                <footer class="bg-white">
-                    <div
-                        class="container mx-auto bg-white text-center p-5 border-t-4 border-blue-500 rounded-lg shadow-md">
 
-                        <h3 class="text-3xl font-bold text-gray-800">Let's Collaborate!</h3>
-                        <p class="mt-2 text-lg text-gray-700">Feel free to reach out for collaboration or job
-                            opportunities!</p>
-                        <div class="py-2 mt-4">
-                            <a href="mailto:ornabbiswass@gmail.com"
-                                class="bg-sky-500 px-6 py-3 rounded-full border-2 border-black mt-4 hover:border-6 hover:border-blue-500 hover:text-blue-500 transition duration-300">
-                                Contact Me
-                            </a>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+    </div>
 
-            <script>
-                const menuToggle = document.getElementById('menu-toggle');
-                const menu = document.getElementById('mobile-menu');
-                menuToggle.addEventListener('click', () => {
-                    menu.classList.toggle('hidden');
-                });
-            </script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
