@@ -323,8 +323,19 @@
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('mobile-menu');
-        menuToggle.addEventListener('click', () => {
+
+        // Toggle menu visibility when clicking the toggle button
+        menuToggle.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent click event from bubbling to the document
             menu.classList.toggle('hidden');
+        });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            // Check if the menu is open and the click is outside the menu and toggle button
+            if (!menu.classList.contains('hidden') && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
         });
     </script>
 </body>

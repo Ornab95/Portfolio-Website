@@ -101,7 +101,7 @@
     </nav>
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        class="hidden bg-gray-800 bg-opacity-20 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
         <a href="index.html" class="block text-black font-bold py-2 neon-hover">Home</a>
         <a href="work-experience.html" class="block text-black font-bold py-2 neon-hover">Experience</a>
         <a href="projects.html" class="block text-black font-bold py-2 neon-hover">Projects</a>
@@ -402,9 +402,22 @@
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const menu = document.getElementById('mobile-menu');
-        menuToggle.addEventListener('click', () => {
+
+        // Toggle menu visibility when clicking the toggle button
+        menuToggle.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent click event from bubbling to the document
             menu.classList.toggle('hidden');
         });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            // Check if the menu is open and the click is outside the menu and toggle button
+            if (!menu.classList.contains('hidden') && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+
+
     </script>
 </body>
 
