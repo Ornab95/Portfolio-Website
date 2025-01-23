@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ornab Biswass | Junior Software Engineer Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/Photo/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/Photo/FavconAB.png" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -77,10 +77,9 @@
             /* Even lower */
         }
 
-        /* From Uiverse.io by cssbuttons-io */
-        button {
+        .custom-button {
             align-items: center;
-            background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+            background-image: linear-gradient(144deg, #ff4040, #be42f3 50%, #2f00eb);
             border: 0;
             border-radius: 10px;
             box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -102,22 +101,25 @@
             transition: all 0.3s;
         }
 
-        button:active,
-        button:hover {
+        .custom-button:active,
+        .custom-button:hover {
             outline: 0;
         }
 
-        button span {
+        .custom-button:active {
+            transform: scale(0.9);
+        }
+
+        .custom-button span {
             background-color: rgb(5, 6, 45);
             padding: 16px 24px;
             border-radius: 6px;
             width: 100%;
             height: 100%;
             transition: 300ms;
-
         }
 
-        button:hover span {
+        .custom-button:hover span {
             background: none;
         }
 
@@ -137,6 +139,130 @@
         .min-w-33 {
             flex: 0 0 33.33%;
         }
+
+        .neon-hover:hover {
+            text-shadow: 0 0 5px rgba(17, 52, 188, 0.7),
+                0 0 10px rgba(255, 69, 0, 0.7),
+                0 0 15px rgba(255, 165, 0, 0.7),
+                0 0 20px rgba(255, 255, 0, 0.7);
+        }
+
+        .explore-button {
+            background: linear-gradient(90deg, #ffffff, #f0f0f0);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+        }
+
+        .explore-button:hover {
+            background: linear-gradient(90deg, #f63bed, #25eb85);
+            color: white;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+            transform: scale(1.05);
+            /* Slightly enlarge */
+        }
+
+        .explore-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
+            transform: rotate(45deg);
+            transition: opacity 0.5s, transform 0.5s;
+            opacity: 0;
+            z-index: 0;
+        }
+
+        .explore-button:hover::before {
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+
+        .explore-button .arrow-icon {
+            transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+        }
+
+        .explore-button:hover .arrow-icon {
+            transform: rotate(90deg);
+            /* Rotate arrow */
+            fill: white;
+            /* Change color to match the hover state */
+        }
+
+        .explore-button span {
+            position: relative;
+            z-index: 10;
+            /* Ensure text and arrow are above the gradient */
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Base Button Styles */
+        .explore-button {
+            background: linear-gradient(90deg, #ffffff, #f0f0f0);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            border-color: #e0e0e0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hover Effects */
+        .explore-button:hover {
+            background: linear-gradient(90deg, #f63bed, #25eb85);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+            transform: scale(1.05);
+        }
+
+        /* Animated Radial Gradient Effect */
+        .explore-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
+            transform: rotate(45deg);
+            transition: opacity 0.5s, transform 0.5s;
+            opacity: 0;
+            z-index: 0;
+        }
+
+        .explore-button:hover::before {
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+
+        /* SVG Icon Animation */
+        .explore-button .arrow-icon {
+            transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+        }
+
+        .explore-button:hover .arrow-icon {
+            transform: rotate(90deg);
+            /* Rotate arrow */
+            fill: white;
+            /* Change color to match the hover state */
+        }
+
+        /* Text and SVG Positioning */
+        .explore-button span {
+            position: relative;
+            z-index: 10;
+            /* Ensure text and arrow are above the gradient */
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
     </style>
 </head>
 
@@ -148,12 +274,18 @@
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo and Home link combined -->
             <div class="flex items-center space-x-4 text-lg font-bold">
-                <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass" class="w-10 h-10 rounded-full object-cover">
-                <a href="index.html" class="hover:text-blue-300 transition font-bold">Ornab Biswass</a>
+                <a href="index.html"
+                    class="flex items-center space-x-4 hover:text-blue-300 transition font-bold neon-hover">
+                    <img src="assets/Photo/FavconAB.png" alt="Ornab Biswass"
+                        class="w-10 h-10 rounded-full object-cover">
+                    <span>Ornab Biswass</span>
+                </a>
             </div>
+
+
             <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <a id="menu-toggle" class="text-white focus:outline-none">
+            <div class="md:hidden ">
+                <a id="menu-toggle" class="text-white focus:outline-none ">
                     <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
@@ -161,13 +293,14 @@
                 </a>
             </div>
             <!-- Navbar Links -->
-            <ul id="nav-links" class="hidden md:flex space-x-6 items-center">
-                <li><a href="index.html" class="hover:text-blue-600 transition font-bold">Home</a></li>
-                <li><a href="work-experience.html" class="hover:text-blue-600 transition font-bold">Experience</a></li>
-                <li><a href="projects.html" class="hover:text-blue-600 transition font-bold">Projects</a></li>
-                <li><a href="achievements.html" class="hover:text-blue-600 transition font-bold">Achievements</a></li>
-                <li><a href="#about" class="hover:text-blue-600 transition font-bold">About</a></li>
-                <li><a href="#contact" class="hover:text-blue-600 transition font-bold">Contact</a></li>
+            <ul id="nav-links" class="hidden md:flex space-x-6 items-center ">
+                <li><a href="index.html" class=" transition font-bold neon-hover">Home</a></li>
+                <li><a href="work-experience.html" class=" transition font-bold neon-hover">Experience</a></li>
+                <li><a href="projects.html" class=" transition font-bold neon-hover">Projects</a>
+                </li>
+                <li><a href="achievements.html" class=" transition font-bold neon-hover">Achievements</a></li>
+                <li><a href="#about" class=" transition font-bold neon-hover">About</a></li>
+                <li><a href="#contact" class=" transition font-bold neon-hover">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -176,12 +309,12 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu"
         class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
-        <a href="index.html" class="block text-black font-bold py-2 hover:text-blue-500">Home</a>
-        <a href="work-experience.html" class="block text-black font-bold py-2 hover:text-blue-500">Experience</a>
-        <a href="projects.html" class="block text-black font-bold py-2 hover:text-blue-500">Projects</a>
-        <a href="#about" class="block text-black font-bold py-2 hover:text-blue-500">About</a>
-        <a href="achievements.html" class="block text-black font-bold py-2 hover:text-blue-500">Achievements</a>
-        <a href="#contact" class="block text-black font-bold py-2 hover:text-blue-500">Contact</a>
+        <a href="index.html" class="block text-black font-bold py-2 neon-hover">Home</a>
+        <a href="work-experience.html" class="block text-black font-bold py-2 neon-hover">Experience</a>
+        <a href="projects.html" class="block text-black font-bold py-2 neon-hover">Projects</a>
+        <a href="#about" class="block text-black font-bold py-2 neon-hover">About</a>
+        <a href="achievements.html" class="block text-black font-bold py-2 neon-hover">Achievements</a>
+        <a href="#contact" class="block text-black font-bold py-2 neon-hover">Contact</a>
     </div>
 
     <!-- Hero Section -->
@@ -194,7 +327,7 @@
         <div class="relative z-10 text-center px-4 md:px-8">
             <div class="gradient-border-container">
                 <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
-                    class="rounded-full mx-auto w-32 sm:w-48 md:w-64 object-cover mb-6 border-4 border-black">
+                    class="rounded-full mx-auto w-32 sm:w-48 md:w-64 object-cover mb-6 border-4 border-gray-700">
             </div>
 
             <!-- Name -->
@@ -211,19 +344,25 @@
 
             <div class="flex justify-center space-x-4">
                 <a href="#projects">
-                    <button><span class="text">View My Projects</span></button>
+                    <button class="custom-button"><span
+                            class="text px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm md:text-base font-medium">View My
+                            Projects</span></button>
                 </a>
-                <a href="OrnabBiswassResume.pdf" target="_blank">
-                    <button><span class="text">View My Resume</span></button>
+                <a href="assets/pdf/OrnabBiswassResume.pdf" target="_blank">
+                    <button class="custom-button"><span
+                            class="text px-2 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm md:text-base font-medium">View My
+                            Resume</span></button>
                 </a>
             </div>
+
+
         </div>
 
         <div class="absolute inset-0 bg-black opacity-50 z-5"></div>
     </section>
 
 
-    <div class="container w-full mx-auto px-4 md:px-8  bg-white">
+    <div class="container w-full mx-auto px-4 md:px-8  bg-orange-600 mt-2">
         <!-- Work Experience -->
         <section class="bg-gray-100 p-6 rounded-lg shadow-lg mb-8 border-t-4  border-blue-500 mt-0.5 ">
             <div class="container mx-auto  ">
@@ -294,7 +433,7 @@
                     <!-- Carousel Items -->
                     <div id="carousel-items" class="flex transition-transform duration-700 ease-in-out">
                         <!-- Project 1 -->
-                        <div class="min-w-full p-1">
+                        <a href="talent-acquisition-system.html" class="min-w-full p-1">
                             <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
                                 <h3 class="text-2xl font-semibold text-gray-800">Talent Acquisition System</h3>
                                 <p class="text-gray-700 mt-2">
@@ -310,10 +449,10 @@
                                     Tailwind
                                     CSS</p>
                             </div>
-                        </div>
+                        </a>
 
                         <!-- Project 2 -->
-                        <div class="min-w-full p-1">
+                        <a href="SEUAdmissionSystem.html" class="min-w-full p-1">
                             <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
                                 <h3 class="text-2xl font-semibold text-gray-800">SEU Admission System</h3>
                                 <p class="text-gray-700 mt-2">
@@ -328,10 +467,10 @@
                                 <p class="text-sm text-gray-500 mt-4">Technologies Used: HTML, Tailwind CSS, JavaScript
                                 </p>
                             </div>
-                        </div>
+                        </a>
 
                         <!-- Project 3 -->
-                        <div class="min-w-full p-1">
+                        <a href="index.html" class="min-w-full p-1">
                             <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
                                 <h3 class="text-2xl font-semibold text-gray-800">Portfolio Website</h3>
                                 <p class="text-gray-700 mt-2">
@@ -345,9 +484,10 @@
                                 <p class="text-sm text-gray-500 mt-4">Technologies Used: HTML, Tailwind CSS, JavaScript
                                 </p>
                             </div>
-                        </div>
+                        </a>
+
                         <!-- Project 4 -->
-                        <div class="min-w-full p-1">
+                        <a href="#" class="min-w-full p-1">
                             <div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col items-start">
                                 <h3 class="text-2xl font-semibold text-gray-800">Basic Calculator</h3>
                                 <p class="text-gray-700 mt-2">
@@ -359,13 +499,13 @@
                                 </ul>
                                 <p class="text-sm text-gray-500 mt-4">Technologies Used: JavaFX</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Grid for Larger Screens (md and up) -->
                 <div class="hidden md:grid grid-cols-1 sm:grid-cols-2 gap-8">
-                    <!-- Project Card 1 -->
+                    <!-- Project Cards for Desktop -->
                     <a href="talent-acquisition-system.html"
                         class="bg-white rounded-lg shadow-lg hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between p-6">
                         <div>
@@ -388,10 +528,9 @@
                                 CSS
                             </p>
                         </div>
-                        <span class="mt-6 text-blue-500 font-medium hover:underline">Learn More</span>
+                        <!-- <span class="mt-6 text-blue-500 font-medium hover:underline">Learn More</span> -->
                     </a>
 
-                    <!-- Project Card 2 -->
                     <a href="SEUAdmissionSystem.html"
                         class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between p-6">
                         <div>
@@ -416,8 +555,16 @@
                 </div>
                 <div class="text-center my-2 md:mt-4 md:mb-6">
                     <a href="projects.html"
-                        class="bg-gray-100 h-14 w-56 p-4 rounded-full text-xl font-semibold border-2 hover:text-blue-500 hover:border-6 hover:border-blue-500 inline-flex items-center justify-center transition-all duration-300">
-                        <span>See All Projects</span>
+                        class="explore-button bg-gray-100 h-14 w-56 p-4 rounded-full text-xl font-semibold border-2 inline-flex items-center justify-center transition-all duration-300 group">
+                        <span class="flex items-center space-x-2">
+                            <span>Explore All</span>
+                            <svg class="arrow-icon w-8 h-8 text-gray-800 transition-transform duration-500 ease-in-out rounded-full border border-gray-700 p-1"
+                                viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                                    class="fill-current"></path>
+                            </svg>
+                        </span>
                     </a>
                 </div>
 
@@ -481,21 +628,27 @@
 
                         </div>
                         <div class="mt-4 text-center">
-                            <a href="Ornab Biswass_SEU.pdf" target="_blank"
+                            <a href="assets/pdf/Ornab Biswass_SEU.pdf" target="_blank"
                                 class="bg-ehite border-2 hover:text-blue-500 text-Black  px-4 py-2 rounded-full hover:border-6 hover:border-blue-500 transition">
-                                Download PDF
+                                See PDF
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4 pb-6 text-center">
                     <a href="achievements.html" target="_blank"
-                        class="bg-white border-2 text-black px-6 py-2 rounded-full hover:text-blue-500 hover:border-blue-500 transition duration-300 inline-block">
-                        All Achievements
+                        class="explore-button bg-gray-100 h-14 w-auto p-4 rounded-full text-xl font-semibold border-2 inline-flex items-center justify-center transition-all duration-300 group">
+                        <span class="flex items-center space-x-2">
+                            <span>See All</span>
+                            <svg class="arrow-icon w-8 h-8 text-gray-800 transition-transform duration-500 ease-in-out rounded-full border border-gray-700 p-1"
+                                viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                                    class="fill-current"></path>
+                            </svg>
+                        </span>
                     </a>
                 </div>
-
-
             </div>
 
         </section>
@@ -564,6 +717,19 @@
 
                 <!-- Social Media Links -->
                 <div class="mt-8 flex justify-center space-x-8">
+
+                    <!-- Email Link -->
+                    <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome Email Icon -->
+                        <i class="fas fa-envelope h-8 w-8"></i>
+                    </a>
+
+                    <!-- WhatsApp Link -->
+                    <a href="https://wa.me/8801852128663" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <i class="fab fa-whatsapp h-8 w-8"></i>
+                    </a>
+
                     <!-- GitHub Link -->
                     <a href="https://github.com/Ornab95" target="_blank"
                         class="text-2xl text-gray-800 hover:text-blue-600">
@@ -578,18 +744,20 @@
                         <i class="fab fa-linkedin h-8 w-8"></i>
                     </a>
 
-                    <!-- Email Link -->
-                    <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
-                        <!-- Font Awesome Email Icon -->
-                        <i class="fas fa-envelope h-8 w-8"></i>
-                    </a>
-
-                    <!-- WhatsApp Link -->
+                    <!-- WhatsApp Link
                     <a href="https://wa.me/8801852128663" target="_blank"
                         class="text-2xl text-gray-800 hover:text-blue-600">
                         <i class="fab fa-whatsapp h-8 w-8"></i>
-                    </a>
+                    </a> -->
+
+                    <!-- Email Link -->
+                    <!-- <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
+                        <span>ornabbiswass@gmail.com</span>
+                    </a> -->
                 </div>
+                <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-white neon-hover">
+                    <span class="text-blue-500 font-semibold hover:text-white">ornabbiswass@gmail.com</span>
+                </a>
             </div>
         </section>
 
@@ -602,23 +770,48 @@
             menu.classList.toggle('hidden');
         });
 
-
-        const carouselItems = document.getElementById("carousel-items");
-        const totalItems = carouselItems.children.length;
+        const carousel = document.getElementById('carousel-items');
         let currentIndex = 0;
 
-        function updateCarousel() {
-            const itemWidth = carouselItems.children[0].offsetWidth;
-            carouselItems.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        }
+        // Update the carousel position
+        const updateCarousel = () => {
+            const width = carousel.children[0].offsetWidth;
+            carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+        };
 
-        function autoSlide() {
-            currentIndex = (currentIndex + 1) % totalItems; // Cycle through items
+        // Swipe functionality for touch devices
+        let startX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        carousel.addEventListener('touchend', (e) => {
+            const endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) {
+                // Swipe left
+                currentIndex = (currentIndex + 1) % carousel.children.length;
+                updateCarousel();
+            } else if (startX < endX - 50) {
+                // Swipe right
+                currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+                updateCarousel();
+            }
+        });
+
+        // Auto-scroll functionality
+        const autoScroll = () => {
+            currentIndex = (currentIndex + 1) % carousel.children.length;
             updateCarousel();
-        }
+        };
 
-        setInterval(autoSlide, 3500); // Change slide every 3.5 seconds
-        window.addEventListener("resize", updateCarousel); // Adjust on window resize
+        // Start auto-scroll with a 5-second interval
+        const autoScrollInterval = setInterval(autoScroll, 5000);
+
+        // Stop auto-scroll on touch interaction
+        carousel.addEventListener('touchstart', () => {
+            clearInterval(autoScrollInterval);
+        });
     </script>
 </body>
 
