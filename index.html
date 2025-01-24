@@ -65,7 +65,7 @@
     </script>
 </head>
 
-<body class="bg-gray-100">
+<body>
 
     <!-- Navbar -->
     <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
@@ -99,14 +99,22 @@
     </nav>
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-        class="hidden bg-gray-800 bg-opacity-20 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
-        <a href="index.html" class="block text-black font-bold py-2 neon-hover">Home</a>
-        <a href="work-experience.html" class="block text-black font-bold py-2 neon-hover">Experience</a>
-        <a href="projects.html" class="block text-black font-bold py-2 neon-hover">Projects</a>
-        <a href="#about" class="block text-black font-bold py-2 neon-hover">About</a>
-        <a href="achievements.html" class="block text-black font-bold py-2 neon-hover">Achievements</a>
-        <a href="#contact" class="block text-black font-bold py-2 neon-hover">Contact</a>
+        class="hidden bg-gray-800 bg-opacity-70 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-sm hover:border hover:border-gray-500">
+        <a href="index.html"
+            class="block text-black font-bold py-2 neon-hover hover:border hover:border-red-500 rounded">Home</a>
+        <a href="work-experience.html"
+            class="block text-black font-bold py-2 neon-hover hover:border hover:border-blue-500 rounded">Experience</a>
+        <a href="projects.html"
+            class="block text-black font-bold py-2 neon-hover hover:border hover:border-green-500 rounded">Projects</a>
+        <a href="#about"
+            class="block text-black font-bold py-2 neon-hover hover:border hover:border-yellow-500 rounded">About</a>
+        <a href="achievements.html"
+            class="block text-black font-bold py-2 neon-hover hover:border hover:border-purple-500 rounded">Achievements</a>
+        <a href="#contact"
+            class="block text-black font-bold py-2 neon-hover hover:border hover:border-pink-500 rounded">Contact</a>
     </div>
+
+
     <!-- Hero Section -->
     <section class="bg-gray-900 text-white h-screen flex items-center justify-center relative overflow-hidden">
         <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
@@ -115,8 +123,10 @@
         <div class="relative z-10 text-center px-4 md:px-8">
             <div class="gradient-border-container">
                 <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
-                    class="rounded-full mx-auto w-32 sm:w-48 md:w-64 object-cover mb-6 border-4 border-gray-700">
+                    class="rounded-full mx-auto w-32 sm:w-48 md:w-64 object-cover mb-6 border-1 border-gray-900"
+                    style="box-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.7), 0 0 15px rgba(255, 165, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.7);">
             </div>
+
             <!-- Name -->
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent"
                 style="text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.7), 0 0 15px rgba(255, 165, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.7);">
@@ -140,13 +150,14 @@
                 </a>
             </div>
         </div>
-
         <div class="absolute inset-0 bg-black opacity-50 z-5"></div>
     </section>
-    <div class="container w-full mx-auto px-4 md:px-8  bg-orange-400 mt-2 rounded">
+
+    <!-- Main Content -->
+    <div class="container w-full mx-auto px-4 md:px-8  bg-white  rounded">
         <!-- Work Experience -->
-        <section class="bg-gray-100 p-6 rounded-lg shadow-lg mb-8 mt-3 border-t-4  border-blue-500 mt-0.5 ">
-            <div class="container mx-auto  ">
+        <section class="bg-gray-100 p-6 rounded-lg shadow-lg mb-8 mt-0   border-t-4  border-blue-500  ">
+            <div class="container mx-auto">
                 <h2 class="text-4xl font-bold mb-8 text-center text-gray-800">Work Experience</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
                     <!-- Experience Card 1 -->
