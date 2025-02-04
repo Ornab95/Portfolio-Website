@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>Ornab Biswass | TAS</title> -->
-    <title>TAS | Ornab Biswass</title>
+    <title>Online Store | Ornab Biswass</title>
     <link rel="icon" type="image/x-icon" href="assets/Photo/FavconAB.png" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -111,67 +111,143 @@
     </div>
 
     <div class="container mx-auto px-4 md:px-8 pt-16">
-        <h1 class="text-4xl font-bold text-center mb-12">Talent Acquisition System (TAS)</h1>
+        <h1 class="text-4xl font-bold text-center mb-12">Online-Based Store Management System (OBSMS)</h1>
         <p class="text-gray-700 text-lg mb-8 text-center">
-            The Talent Acquisition System is a comprehensive recruitment platform developed to streamline the hiring
-            process
-            for Southeast University.
-        </p>
-        <!-- Features Section -->
-        <section id="features"
-            class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg mb-6">
+            The Online-Based Store Management System (OBSMS) is a comprehensive web application designed to manage
+            various aspects
+            of an online store. This project was developed to enhance practical skills in web development, covering both
+            frontend
+            and backend functionalities.
+        </p <!-- Features Section -->
+        <section id="features" class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 
+        border-t-4 border-blue-500 rounded-lg mb-6">
             <h2 class="text-3xl font-semibold mb-6">Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Authentication & User Management -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">User-Friendly Interface</h3>
-                    <p class="text-gray-700 mt-2">Designed for both job applicants and HR professionals.</p>
+                    <h3 class="text-lg font-semibold">Authentication & User Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Admin Login (via <code>login.php</code>) <br>
+                        ✅ Session Handling (via <code>header.php</code>) <br>
+                        ✅ Admin Logout (via <code>logout.php</code>)
+                    </p>
                 </div>
+
+                <!-- Product & Stock Management -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Secure Login</h3>
-                    <p class="text-gray-700 mt-2">Implementing secure user registration and login functionality.</p>
+                    <h3 class="text-lg font-semibold">Product & Stock Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ View Stock (via <code>index.php</code>) <br>
+                        ✅ Update Stock (Edit product details) <br>
+                        ✅ Delete Products
+                    </p>
                 </div>
+
+                <!-- Purchase Management -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Applicant Dashboard</h3>
-                    <p class="text-gray-700 mt-2">Manage applications and view application statuses easily.</p>
+                    <h3 class="text-lg font-semibold">Purchase Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Purchase Form (via <code>purchase.php</code>) <br>
+                        ✅ Insert Purchased Products (Stored in <code>product</code> and <code>purchase</code> tables)
+                    </p>
                 </div>
+
+                <!-- Sales Management -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Job Posting</h3>
-                    <p class="text-gray-700 mt-2">HR managers can post job openings seamlessly.</p>
+                    <h3 class="text-lg font-semibold">Sales Management</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Sell Products (via <code>sales.php</code>) <br>
+                        ✅ Update Stock After Sale <br>
+                        ✅ Record Sales in <code>sales</code> Table
+                    </p>
                 </div>
+
+                <!-- Reports & Analytics -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Guidance on How to Apply</h3>
-                    <p class="text-gray-700 mt-2">Step-by-step guidance for applicants on the application process.</p>
+                    <h3 class="text-lg font-semibold">Reports & Analytics</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Purchase Reports (via <code>purchaseReport.php</code>, filtered by date) <br>
+                        ✅ Sales Reports (via <code>salesReport.php</code>, filtered by date)
+                    </p>
                 </div>
+
+                <!-- User Interface Features -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">User Interface (UI) Features</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Navbar with Authentication Check <br>
+                        ✅ Cart UI with Add/Remove Functionality <br>
+                        ✅ Responsive Layout using Tailwind CSS
+                    </p>
+                </div>
+
             </div>
         </section>
 
         <!-- Technologies Used Section -->
-        <section id="technologies-Used"
-            class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg mb-6">
+        <section id="technologies-used" class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 
+        border-t-4 border-blue-500 rounded-lg mb-6">
             <h2 class="text-3xl font-semibold mb-6">Technologies Used</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Frontend -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Angular</h3>
-                    <p class="text-gray-700 mt-2">Framework for building the front-end of the application.</p>
+                    <h3 class="text-lg font-semibold">Frontend</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ <strong>HTML</strong> – Structure of the web pages <br>
+                        ✅ <strong>Tailwind CSS</strong> – Styling and responsive design <br>
+                        ✅ <strong>JavaScript (Vanilla/Optional)</strong> – For interactivity
+                    </p>
                 </div>
+
+                <!-- Backend -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Spring Boot</h3>
-                    <p class="text-gray-700 mt-2">Framework used for building the back-end services.</p>
+                    <h3 class="text-lg font-semibold">Backend</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ <strong>PHP</strong> – Server-side logic and database interactions
+                    </p>
                 </div>
+
+                <!-- Tailwind CSS -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold">Tailwind CSS</h3>
-                    <p class="text-gray-700 mt-2">Utility-first CSS framework for styling the application.</p>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Utility-first CSS framework for styling the application.
+                    </p>
                 </div>
+
+                <!-- HTML -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold">HTML</h3>
-                    <p class="text-gray-700 mt-2">Markup language used for structuring web content.</p>
+                    <p class="text-gray-700 mt-2">
+                        ✅ Markup language used for structuring web content.
+                    </p>
                 </div>
+
+                <!-- Database -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold">Java</h3>
-                    <p class="text-gray-700 mt-2">Programming language used in back-end development.</p>
+                    <h3 class="text-lg font-semibold">Database</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ <strong>MySQL</strong> – Storing product details, sales, purchases, and user data
+                    </p>
                 </div>
+
+                <!-- Other Technologies & Features -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Other Technologies & Features</h3>
+                    <p class="text-gray-700 mt-2">
+                        ✅ <strong>Session Management</strong> – Using PHP for authentication and user sessions <br>
+                        ✅ <strong>CRUD Operations</strong> – Add, update, delete, and retrieve product data <br>
+                        ✅ <strong>Reporting System</strong> – Generates purchase and sales reports <br>
+                        ✅ <strong>Authentication</strong> – Secure login/logout system for admins <br>
+                        ✅ <strong>Stock Management</strong> – Tracks product stock levels
+                    </p>
+                </div>
+
             </div>
         </section>
+
 
         <!-- Screenshots Section -->
         <section id="screenshots"
@@ -180,39 +256,43 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Dashboard Screenshot -->
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="assets/TAS-Photo/TAS-Dashboard.png" alt="TAS Dashboard"
-                        class="w-full h-auto object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">Dashboard</h3>
+                    <img src="assets/obsms/Login.png" alt="Login" class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Login</h3>
                 </div>
                 <!-- Forget Password Screenshot -->
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="assets/TAS-Photo/TAS-ForgetPass.png" alt="TAS Forget Password"
+                    <img src="assets/obsms/Stock Status.png" alt="Home and Stock Status"
                         class="w-full h-auto object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">Forget Password</h3>
+                    <h3 class="text-lg font-semibold">Home and Stock Status</h3>
                 </div>
                 <!-- How to Apply Screenshot -->
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="assets/TAS-Photo/TAS-HowToApply.png" alt="TAS How to Apply"
+                    <img src="assets/obsms/Purchase Product.png" alt="Purchase"
                         class="w-full h-auto object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">How to Apply</h3>
+                    <h3 class="text-lg font-semibold">Purchase</h3>
                 </div>
                 <!-- HR Job Post Screenshot -->
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="assets/TAS-Photo/TAS-HrJobPost.png" alt="TAS HR Job Post"
-                        class="w-full h-auto object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">HR Job Post</h3>
+                    <img src="assets/obsms/Sales.png" alt="Sales" class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Sales</h3>
                 </div>
                 <!-- Registration Screenshot -->
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="assets/TAS-Photo/TAS-Reg.png" alt="TAS Registration"
+                    <img src="assets/obsms/Purchase Report.png" alt="Purchase Report"
                         class="w-full h-auto object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">Registration</h3>
+                    <h3 class="text-lg font-semibold">Purchase Report</h3>
                 </div>
                 <!-- Sign In Screenshot -->
                 <div class="bg-white p-4 rounded-lg shadow-md">
-                    <img src="assets/TAS-Photo/TAS-SignIn.png" alt="TAS Sign In"
+                    <img src="assets/obsms/Sales Report.png" alt="Sales Report"
                         class="w-full h-auto object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">Sign In</h3>
+                    <h3 class="text-lg font-semibold">Sales Report</h3>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/obsms/Responsiveness.png" alt="Responsiveness Toggle Menu"
+                        class="w-full h-auto object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Responsiveness Toggle Menu</h3>
                 </div>
             </div>
         </section>
@@ -246,7 +326,7 @@
                                 System</span> and the <span class="font-semibold text-blue-600">SEU Admission
                                 System</span>.
                         </p>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        <!-- <p class="text-lg text-gray-700 leading-relaxed mb-6">
                             I have a strong interest in Artificial Intelligence, and I'm planning to pursue an MSc in AI
                             at
                             FAU
@@ -255,7 +335,7 @@
                             and
                             always eager to tackle new challenges, whether it’s in software development, research, or
                             IT.
-                        </p>
+                        </p> -->
                         <p class="text-lg text-gray-700 leading-relaxed mb-6">
                             Apart from coding, I have experience in IT internship work, collaborating with senior
                             developers,
