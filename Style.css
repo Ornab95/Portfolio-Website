@@ -107,119 +107,58 @@
         }
 
         .explore-button {
-            background: linear-gradient(90deg, #ffffff, #f0f0f0);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transform: scale(1);
-        }
+    background: linear-gradient(90deg, #ffffff, #f0f0f0);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 9rem; /* Fixed width */
+    height: 3rem; /* Fixed height */
+    border: 2px solid #f87171;
+}
 
-        .explore-button:hover {
-            background: linear-gradient(90deg, #f63bed, #25eb85);
-            color: white;
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
-            transform: scale(1.05);
-            /* Slightly enlarge */
-        }
+.explore-button:hover {
+    background: linear-gradient(90deg, #9f3bf6, #d12525);
+    color: white;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+    border: 2px solid #f87171;
+}
 
-        .explore-button::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
-            transform: rotate(45deg);
-            transition: opacity 0.5s, transform 0.5s;
-            opacity: 0;
-            z-index: 0;
-        }
+/* Radial gradient effect */
+.explore-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
+    transform: rotate(45deg);
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+    z-index: 0;
+}
 
-        .explore-button:hover::before {
-            transform: rotate(0deg);
-            opacity: 1;
-        }
+.explore-button:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+}
 
-        .explore-button .arrow-icon {
-            transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
-        }
+/* Arrow rotation effect */
+.explore-button .arrow-icon {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
 
-        .explore-button:hover .arrow-icon {
-            transform: rotate(90deg);
-            /* Rotate arrow */
-            fill: white;
-            /* Change color to match the hover state */
-        }
+.explore-button:hover .arrow-icon {
+    transform: rotate(90deg);
+    fill: white;
+}
 
-        .explore-button span {
-            position: relative;
-            z-index: 10;
-            /* Ensure text and arrow are above the gradient */
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Base Button Styles */
-        .explore-button {
-            background: linear-gradient(90deg, #ffffff, #f0f0f0);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transform: scale(1);
-            border-color: #e0e0e0;
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Hover Effects */
-        .explore-button:hover {
-            background: linear-gradient(90deg, #f63bed, #25eb85);
-            color: white;
-            border-color: transparent;
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
-            transform: scale(1.05);
-        }
-
-        /* Animated Radial Gradient Effect */
-        .explore-button::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
-            transform: rotate(45deg);
-            transition: opacity 0.5s, transform 0.5s;
-            opacity: 0;
-            z-index: 0;
-        }
-
-        .explore-button:hover::before {
-            transform: rotate(0deg);
-            opacity: 1;
-        }
-
-        /* SVG Icon Animation */
-        .explore-button .arrow-icon {
-            transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
-        }
-
-        .explore-button:hover .arrow-icon {
-            transform: rotate(90deg);
-            /* Rotate arrow */
-            fill: white;
-            /* Change color to match the hover state */
-        }
-
-        /* Text and SVG Positioning */
-        .explore-button span {
-            position: relative;
-            z-index: 10;
-            /* Ensure text and arrow are above the gradient */
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-    
+/* Text and arrow positioning */
+.explore-button span {
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
