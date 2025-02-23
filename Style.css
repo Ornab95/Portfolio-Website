@@ -5,35 +5,24 @@
 
         nav {
             -webkit-backdrop-filter: blur(10px);
-            /* For Safari compatibility */
             backdrop-filter: blur(10px);
-            /* For modern browsers */
-            background-color: rgba(255, 255, 255, 0.5);
-            /* Transparent background */
+            background-color:rgba(255, 255, 255, 0.5);
         }
 
         #mobile-menu {
             position: fixed;
             background-color: rgba(255, 255, 255, 0.8);
-            /* Slightly more opaque for better visibility */
             -webkit-backdrop-filter: blur(10px);
-            /* Blur effect */
             backdrop-filter: blur(10px);
-            /* Safari compatibility */
             z-index: 1000;
-            /* Higher than hero section content */
         }
-
-        /* Ensure hero section's z-index is lower */
         .hero-section-content {
             position: relative;
             z-index: 10;
-            /* Lower than the mobile menu */
         }
 
         .hero-section-overlay {
             z-index: 5;
-            /* Even lower */
         }
 
         .custom-button {
@@ -124,7 +113,6 @@
     border: 2px solid #f87171;
 }
 
-/* Radial gradient effect */
 .explore-button::before {
     content: '';
     position: absolute;
@@ -144,7 +132,6 @@
     opacity: 1;
 }
 
-/* Arrow rotation effect */
 .explore-button .arrow-icon {
     transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
@@ -154,7 +141,6 @@
     fill: white;
 }
 
-/* Text and arrow positioning */
 .explore-button span {
     position: relative;
     z-index: 10;
