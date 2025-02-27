@@ -148,3 +148,17 @@
     align-items: center;
     gap: 8px;
 }
+/* Carousel */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-item {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease-in-out;
+}
