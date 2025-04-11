@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Ornab Biswass | SAP</title> -->
+    <title>Exam Portal | Ornab Biswass</title>
+    <link rel="icon" type="image/x-icon" href="assets/Photo/FavconAB.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <base href="assets/"> -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta name="description"
+        content="Portfolio of Ornab Biswass, a passionate Junior Software Engineer specializing in Java & Spring-Boot with projects in Angular, Tailwind CSS, and Full-Stack Development.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="og:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="og:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="og:image" content="assets/Photo/OrnabBiswas.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ornabbiswass.netlify.app/">
+    <meta property="twitter:title" content="Ornab Biswass | Junior Software Engineer Portfolio">
+    <meta property="twitter:description"
+        content="Explore the professional and academic achievements of Ornab Biswass, including detailed project portfolios and work experience in software development.">
+    <meta property="twitter:image" content="assets/Photo/OrnabBiswas.jpg">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            /* For Safari compatibility */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* More transparent background */
+        }
+
+        #mobile-menu {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* Transparent white */
+            -webkit-backdrop-filter: blur(10px);
+            /* Blur effect */
+            backdrop-filter: blur(10px);
+            /* Safari compatibility */
+        }
+
+        .neon-hover:hover {
+            text-shadow: 0 0 5px rgba(17, 52, 188, 0.7),
+                0 0 10px rgba(255, 69, 0, 0.7),
+                0 0 15px rgba(255, 165, 0, 0.7),
+                0 0 20px rgba(255, 255, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 bg-opacity-20 text-white p-2 shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo and Home link combined -->
+            <div class="flex items-center space-x-4 text-lg font-bold">
+                <a href="index.html" class="flex items-center space-x-4 transition font-bold neon-hover">
+                    <img src="assets/Photo/FavconAB.png" alt="Ornab Biswass"
+                        class="w-10 h-10 rounded-full object-cover">
+                    <span>Ornab Biswass</span>
+                </a>
+            </div>
+
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden ">
+                <a id="menu-toggle" class="text-white focus:outline-none ">
+                    <svg id="menu-icon" class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </a>
+            </div>
+            <!-- Navbar Links -->
+            <ul id="nav-links" class="hidden md:flex space-x-6 items-center ">
+                <li><a href="index.html" class=" transition font-bold neon-hover">Home</a></li>
+                <li><a href="work-experience.html" class=" transition font-bold neon-hover">Experience</a></li>
+                <li><a href="projects.html" class=" transition font-bold neon-hover">Projects</a>
+                </li>
+                <li><a href="achievements.html" class=" transition font-bold neon-hover">Achievements</a></li>
+                <li><a href="#about" class=" transition font-bold neon-hover">About</a></li>
+                <li><a href="#contact" class=" transition font-bold neon-hover">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden bg-gray-800 bg-opacity-50 text-white rounded-b-2xl p-4 absolute top-14 left-0 w-full z-10 shadow-md md:hidden backdrop-blur-md">
+        <a href="index.html" class="block text-black font-bold py-2 neon-hover">Home</a>
+        <a href="work-experience.html" class="block text-black font-bold py-2 neon-hover">Experience</a>
+        <a href="projects.html" class="block text-black font-bold py-2 neon-hover">Projects</a>
+        <a href="#about" class="block text-black font-bold py-2 neon-hover">About</a>
+        <a href="achievements.html" class="block text-black font-bold py-2 neon-hover">Achievements</a>
+        <a href="#contact" class="block text-black font-bold py-2 neon-hover">Contact</a>
+    </div>
+    <!-- <div class="container mx-auto px-4 md:px-8  bg-white"> -->
+    <!-- Page Content -->
+    <div class="container mx-auto px-4 md:px-8 pt-16">
+        <h1 class="text-4xl font-bold text-center mb-12">Exam Portal API</h1>
+<p class="text-gray-700 text-lg mb-8 text-center">
+    Project Description: A Spring Boot-based RESTful API for managing and conducting online quizzes. Enables quiz creation, question management, secure access, and result evaluation.
+</p>
+
+<!-- Features Section -->
+<section id="features"
+    class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg mb-6">
+    <h2 class="text-3xl font-semibold mb-4">Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">User Authentication</h3>
+            <p class="text-gray-700 mt-2">JWT-based authentication system with role-based access control for Admin and Users.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Quiz Management</h3>
+            <p class="text-gray-700 mt-2">Admins can create, update, and delete quizzes and assign questions to them.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Question Bank</h3>
+            <p class="text-gray-700 mt-2">Store and organize multiple-choice questions by categories and topics.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Timed Quiz Attempts</h3>
+            <p class="text-gray-700 mt-2">Users can take quizzes within a set time limit. The system records and evaluates submissions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Result Evaluation</h3>
+            <p class="text-gray-700 mt-2">Automatic scoring and result generation with correct/incorrect answer tracking.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Category-Based Filtering</h3>
+            <p class="text-gray-700 mt-2">Allows filtering and organizing quizzes based on subject or difficulty level.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies Used Section -->
+<section id="technologies-Used"
+    class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg py-6 mb-6">
+    <h2 class="text-3xl font-semibold mb-4">Technologies Used</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Spring Boot</h3>
+            <p class="text-gray-700 mt-2">Back-end framework used for building RESTful services quickly and securely.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Java</h3>
+            <p class="text-gray-700 mt-2">Core programming language used to build the application logic and services.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">MySQL</h3>
+            <p class="text-gray-700 mt-2">Relational database used to persist quizzes, questions, users, and results.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Spring Security</h3>
+            <p class="text-gray-700 mt-2">Used for securing endpoints with JWT and managing user roles and permissions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Postman</h3>
+            <p class="text-gray-700 mt-2">Used for API testing and validating endpoints during development.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold">Maven</h3>
+            <p class="text-gray-700 mt-2">Project management and dependency tool for building the Spring Boot application.</p>
+        </div>
+    </div>
+</section>
+
+<!-- screenshots -->
+<div id="screenshots"
+    class="container mx-auto px-4 md:px-8 bg-gray-100 shadow-md text-center p-5 border-t-4 border-blue-500 rounded-lg py-6 mb-6">
+    <h2 class="text-3xl font-semibold mb-4 text-center">Screenshots</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!--  Screenshot -->
+        <div class="bg-white p-4 rounded-lg shadow-md col-span-1 md:col-span-2 lg:col-span-1 mx-auto flex flex-col justify-center items-center">
+            <img src="assets/Photo/api-endpoints.png" alt="API Endpoints"
+            class="w-full h-auto object-cover rounded-lg mb-4">
+            <h3 class="text-lg font-semibold text-center">All APIs</h3>
+        </div>
+        <!-- Postman: Quiz APIs -->
+        <div class="bg-white p-4 rounded-lg shadow-md col-span-1 md:col-span-2 lg:col-span-1 mx-auto flex flex-col justify-center items-center">
+            <img src="assets/Photo/PostmanQuiz APIs.png" alt="Postman: Quiz APIs"
+            class="w-full h-auto object-cover rounded-lg mb-4">
+            <h3 class="text-lg font-semibold text-center">Postman: Quiz APIs</h3>
+        </div>
+    
+        <!-- Database Design -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="assets/Photo/er-diagram.png" alt="Database Schema"
+                class="w-full h-auto object-cover rounded-lg mb-4">
+            <h3 class="text-lg font-semibold">Database Design</h3>
+        </div>
+    </div>
+</div>
+
+
+        <!-- About Me Section -->
+        <section id="about" class="py-6">
+            <div class="container mx-auto px-4 md:px-8 bg-white shadow-md border-t-4 border-blue-500 rounded-lg">
+                <h2 class="text-4xl font-bold my-8 text-gray-800 text-center">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-1/3">
+                        <img src="assets/Photo/OrnabBiswas.jpg" alt="Ornab Biswass"
+                            class="rounded-full mx-auto w-64 h-64 object-cover border-4 border-blue-500">
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Hi! I'm <span class="font-semibold text-blue-600">Ornab Biswass</span>, a passionate
+                            junior
+                            software
+                            engineer with a strong background in full-stack development. I am currently pursuing my
+                            Bachelor's
+                            degree in Computer Science from Southeast University, where I've built a solid
+                            foundation in
+                            programming, algorithm design, databases, and software engineering.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            I'm proficient in front-end technologies like Angular and Tailwind CSS, and I have
+                            hands-on
+                            experience working with back-end technologies such as Java and Spring Boot. My journey
+                            also
+                            includes
+                            building projects like the <span class="font-semibold text-blue-600">Talent Acquisition
+                                System</span> and the <span class="font-semibold text-blue-600">SEU Admission
+                                System</span>.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            I have a strong interest in Artificial Intelligence, and I'm planning to pursue an MSc
+                            in AI
+                            at
+                            FAU
+                            Erlangen-Nürnberg to further enhance my knowledge and skills in this area. I’m a quick
+                            learner
+                            and
+                            always eager to tackle new challenges, whether it’s in software development, research,
+                            or
+                            IT.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Apart from coding, I have experience in IT internship work, collaborating with senior
+                            developers,
+                            and leading web development tasks. I'm also a volunteer who helped students with job
+                            opportunities
+                            through Kormo Jobs by Google and Shomvob Technologies Ltd.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Feel free to check out my projects or reach out if you'd like to collaborate or just
+                            chat
+                            about
+                            technology!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white mb-6 ">
+            <div
+                class="container mx-auto px-4 md:px-8 bg-white shadow-lg text-center p-5 border-t-4 border-blue-500 rounded-lg">
+                <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mt-2">Feel free to connect with me through any of the platforms below:
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="mt-8 flex justify-center space-x-8">
+
+                    <!-- Email Link -->
+                    <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome Email Icon -->
+                        <i class="fas fa-envelope h-8 w-8"></i>
+                    </a>
+
+                    <!-- WhatsApp Link -->
+                    <a href="https://wa.me/8801852128663" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <i class="fab fa-whatsapp h-8 w-8"></i>
+                    </a>
+
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/Ornab95" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome GitHub Icon -->
+                        <i class="fab fa-github h-8 w-8"></i>
+                    </a>
+
+                    <!-- LinkedIn Link -->
+                    <a href="https://www.linkedin.com/in/ornabbiswass/" target="_blank"
+                        class="text-2xl text-gray-800 hover:text-blue-600">
+                        <!-- Font Awesome LinkedIn Icon -->
+                        <i class="fab fa-linkedin h-8 w-8"></i>
+                    </a>
+                </div>
+                <a href="mailto:ornabbiswass@gmail.com" class="text-2xl text-gray-800 hover:text-white neon-hover">
+                    <span class="text-blue-500 font-semibold hover:text-white">ornabbiswass@gmail.com</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+
+        // Toggle menu visibility when clicking the toggle button
+        menuToggle.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent click event from bubbling to the document
+            menu.classList.toggle('hidden');
+        });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', (event) => {
+            // Check if the menu is open and the click is outside the menu and toggle button
+            if (!menu.classList.contains('hidden') && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>
